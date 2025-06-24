@@ -1,0 +1,16 @@
+:root {
+    --bgColor: rgb(236, 226, 200);
+    --fontRoboto: "Roboto", sans-serif;
+    --fontSarabun: "Sarabun", sans-serif;
+    --fontPoppins: " Poppins", sans-serif;
+    --fontSans: "DM Sans", sans-serif;
+    --blackColor: #000000;
+    --whiteColor: #fff;
+    --activeColor: #FF5E41;
+    --menuColor: rgba(0, 0, 0, 1);
+    --termsColor: rgba(34, 34, 34, 1);
+    --rulesColor: rgba(122, 122, 122, 1);
+    --footerBg: #222222;
+
+
+}
