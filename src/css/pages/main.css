@@ -19,7 +19,8 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -386,7 +387,7 @@ a{
 }
 
 .parallax {
-    background-image: url("/src/img/poster.png");
+    background-image: url("../../img/poster.png");
 }
 
 
