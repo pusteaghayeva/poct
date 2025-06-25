@@ -98,32 +98,11 @@ a {
     z-index: 10 !important;
     pointer-events: none;
     clip-path: polygon(0 0%, 100% 0%, 100% 78%, 0 100%);
-
 }
-
-/* .container.content {
-    position: relative;
-    z-index: 4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 50px;
-    color: white;
-    background-color: red;
-} */
-
-/* .left-text .small-title {
-    font-size: 16px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-} */
-
 
 .transportation-first-title {
     display: flex;
     align-items: center;
-    /* font-family: var(--fontRoboto); */
 }
 
 .transportation-title {
@@ -131,8 +110,6 @@ a {
     font-weight: 400;
     font-size: 24px;
     font-family: var(--fontRoboto);
-
-
 }
 
 .transportation-hr {
@@ -147,9 +124,6 @@ a {
     display: flex;
     flex-direction: column;
     font-family: var(--fontSarabun);
-    /* font-weight: 600;
-    font-size: 88px; */
-
 }
 
 .slogan-text-white {
@@ -169,7 +143,6 @@ a {
     position: relative;
     top: -5px;
     font-weight: 600;
-    /* background-color: red; */
 }
 
 .statistics-blog {
@@ -212,8 +185,6 @@ a {
     margin: 200px 0;
 }
 
-
-
 .section-blog-about-flex {
     display: flex;
     align-items: flex-start;
@@ -227,7 +198,6 @@ a {
 .about-img-div {
     width: 496px;
     height: 506px;
-
 }
 
 .about-blog-img {
@@ -267,8 +237,6 @@ a {
     font-weight: 600;
     font-size: 75px;
     color: var(--whiteColor);
-    /* margin: 0 6px; */
-
 }
 
 .about-number-text {
@@ -310,7 +278,6 @@ a {
     color: var(--activeColor);
     width: 80%;
     margin-bottom: 60px;
-
 }
 
 .about-social-icons {
@@ -359,9 +326,6 @@ a {
     transform-style: preserve-3d;
 }
 
-
-
-
 .about-number,
 .about-number-text {
     color: white;
@@ -373,7 +337,6 @@ a {
 .about-years-experience:hover .about-number-text {
     transform: translateY(-10px);
 }
-
 
 /* Postal service */
 .section-background {
@@ -390,7 +353,6 @@ a {
 .parallax {
     background-image: url("../../img/poster.png");
 }
-
 
 .postal-services-blog {
     background-color: var(--activeColor);
@@ -419,10 +381,14 @@ a {
     transition: all .4s ease-in;
 }
 
+.postal-services-pos-abs img {
+    width: 50px;
+    height: 60px;
+}
+
 .postal-services-blog:hover .postal-services-pos-abs {
     background-color: var(--activeColor);
 }
-
 
 .postal-services-text {
     position: absolute;
@@ -481,7 +447,7 @@ a {
     transition: color 0.3s ease;
 }
 
-/* Sertler ve qaydalar */
+/* Terms and conditions*/
 .terms_conditions {
     margin: 100px 0;
 }
@@ -490,7 +456,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* background-color: pink; */
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -498,8 +463,6 @@ a {
 .terms_condotions_left {
     font-family: var(--fontSarabun);
     position: relative;
-    /* padding-right: 50px; */
-    /* background-color: yellow; */
 }
 
 .terms_condotions_left::before {
@@ -524,10 +487,7 @@ a {
     font-size: 64px;
     text-align: right;
     color: var(--activeColor);
-
 }
-
-.rules {}
 
 .rules-flex {
     display: flex;
@@ -536,8 +496,6 @@ a {
     margin: 40px 0;
     padding: 11px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-
-
 }
 
 .rules-flex:hover {
@@ -583,7 +541,6 @@ a {
 .terms_conditions .row {
     display: flex;
     align-items: stretch;
-    /* Bütün col-ları eyni hündürlükdə saxlayır */
 }
 
 .terms_condotions_left {
@@ -592,11 +549,6 @@ a {
     flex-direction: column;
     justify-content: center;
 }
-
-
-
-
-
 
 .terms_condotions_right::after {
     content: '';
@@ -614,16 +566,11 @@ a {
     opacity: 1;
 }
 
-.terms_condotions_right_img {}
-
 .terms_condotions_right:hover .terms_condotions_right_img {
     transform: scale(1.1);
 }
 
-
-
 /* calculator */
-
 .postal_address {
     margin: 40px 0;
 }
@@ -664,7 +611,6 @@ a {
     font-weight: 600;
     font-size: 64px;
     position: relative;
-
 }
 
 .brands-title::before {
@@ -718,7 +664,7 @@ a {
 .owl-nav button {
     position: absolute;
     top: 50%;
-    background-color: #000;
+    background-color: var(--blackColor);
     color: #fff;
     margin: 0;
     transition: all 0.3s ease-in-out;
@@ -732,9 +678,14 @@ a {
     right: 0;
 }
 
+.owl-nav {
+    display: none;
+}
+
 .owl-dots {
     text-align: center;
     padding-top: 15px;
+    display: none;
 }
 
 .owl-dots button.owl-dot {
@@ -747,7 +698,7 @@ a {
 }
 
 .owl-dots button.owl-dot.active {
-    background-color: #000;
+    background-color: var(--blackColor);
 }
 
 .owl-dots button.owl-dot:focus {
@@ -806,14 +757,6 @@ a {
     cursor: pointer;
 }
 
-/* .useful-link-blog:hover .useful-logo {
-    transform: rotate(2deg) scale(1.05);
-} */
-/* .useful-link-blog:hover {
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-    transform: scale(1.02);
-} */
-
 .useful-link-blog:hover {
     animation: bounce 0.5s ease;
 }
@@ -854,407 +797,6 @@ a {
 
 .useful-link-blog:hover {
     transform: translateY(-1px);
-}
-
-@media only screen and (max-width: 576px) {
-    .cargo-img {
-        max-height: 300px;
-    }
-
-    .second-blog-about {
-        margin: 20px 0;
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    .second-blog-about {
-        margin: 40px 0;
-    }
-
-    .section-about-right {
-        padding: 0 10px;
-        /* margin: 80px 0; */
-    }
-
-    .section-right-title {
-        font-size: 36px;
-    }
-
-    .about-right-content {
-        font-size: 22px;
-        width: 100%;
-        margin-bottom: 18px;
-    }
-
-    .about-img-div {
-        width: 300px;
-        height: 300px;
-        width: 100%;
-        height: auto;
-    }
-
-    .about-years-experience {
-        width: 100%;
-        right: 0;
-    }
-
-    .section-background {
-        height: auto;
-    }
-
-    .postal-services-blog {
-        margin: 25px auto;
-    }
-
-    .postal-services-pos-abs {
-        width: 50px;
-        height: 50px;
-        left: 43%;
-    }
-
-
-    .terms_condotions_right {
-        display: none;
-    }
-
-    .rules-title {
-        font-size: 18px;
-    }
-}
-
-
-
-@media only screen and (max-width: 992px) {
-    .first-blog-section {
-        height: auto;
-    }
-
-    .first-blog-section .container {
-        max-width: 100%;
-    }
-
-
-    /* .cargo-img {
-        clip-path: none;
-        height: auto;
-        display: none;
-    } */
-    .cargo-img {
-        max-height: 450px;
-        object-position: center top;
-        clip-path: none;
-    }
-
-    .transportation-title {
-        font-size: 20px;
-        color: var(--activeColor);
-        font-weight: 600;
-    }
-
-    .dark-overlay {
-        display: none;
-    }
-
-    .gray-overlay {
-        display: none;
-    }
-
-    .orange-overlay {
-        display: none;
-    }
-
-    .statistics-flex {
-        display: block;
-        display: block;
-        padding: 10px 0;
-    }
-
-
-    .slogan span {
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .statistic-text {
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .statistic-content {
-        margin: 10px 0;
-    }
-
-    .statistic-number {
-        font-size: 30px;
-        text-align: center;
-        margin-right: 0;
-    }
-
-    .transportation-first-title {
-        justify-content: center;
-    }
-
-    /* ************************** */
-
-    .second-blog-about {
-        margin: 60px 0;
-    }
-
-    .section-blog-about-flex {
-        display: flex;
-    }
-
-    .section-about-right {
-        padding: 0;
-    }
-
-    .section-right-title {
-        margin: 2px 0;
-    }
-
-    .about-right-content {
-        font-family: var(--fontRoboto);
-        font-weight: 900;
-        font-size: 24px;
-        width: 100%;
-        margin: 20px 0;
-
-    }
-
-    .about-img-div {
-        /* width: 300px; */
-        display: none;
-    }
-
-
-    /* .section-about-right {
-        padding: 0 20px;
-    }
-
-    .section-right-title {
-        margin: 0 0 10px;
-        font-size: 44px;
-    }
-
-    .about-right-content {
-        width: 100%;
-        font-size: 22px;
-        margin-bottom: 15px;
-    }
-
-    .about-years-experience {
-        width: 100%;
-    } */
-
-    .section-postal-services {
-        padding: 0;
-    }
-
-    .postal-services-blog {
-        width: 300px;
-        height: 200px;
-        margin: 20px auto;
-    }
-
-    .rules-flex {
-        margin: 10px 0;
-    }
-
-    .rules-title {
-        font-size: 20px;
-    }
-
-    .terms_conditions {
-        margin: 20px 0;
-    }
-
-    .terms_condotions_right {
-        width: 100%;
-        height: 250px;
-        /* display: none; */
-    }
-
-    .terms_left_title {
-        font-weight: 600;
-        font-size: 26px;
-        text-align: center;
-    }
-
-    /* .terms_condotions_right_img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    } */
-
-    .terms_condotions_left {
-        padding-right: 0;
-    }
-
-    .terms_conditions_or {
-        font-size: 36px;
-    }
-
-    .postal_address {}
-
-    .postal_adress_title {
-        margin: 40px 0;
-    }
-
-    .postal_adress_title {
-        font-size: 40px;
-    }
-
-    .responsive-map iframe {
-        height: 300px;
-    }
-
-    .brands-title {
-        font-size: 30px;
-    }
-
-    .brands-title-flex {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .order_stamp {
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-    }
-
-    .order_stamp_icon {
-        width: 20px;
-        height: 20px;
-    }
-
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1400px) {
-    .section-blog-about-flex {
-        display: flex;
-    }
-
-    .about-img-div {
-        width: 496px;
-    }
-
-    .section-about-right {
-        padding: 0 20px;
-    }
-
-    .section-right-title {
-        margin: 12px 0;
-    }
-
-    .section-right-title {
-        /* margin: 0 0 10px; */
-        font-size: 48px;
-    }
-
-    .about-right-content {
-        width: 100%;
-        font-size: 23px;
-        margin-bottom: 15px;
-    }
-
-    .about-years-experience {
-        width: 100%;
-    }
-
-    .section-background {
-        height: 600px;
-    }
-
-    .postal-services-pos-abs {
-        width: 60px;
-        height: 60px;
-    }
-
-    .postal-services-blog {
-        width: 200px;
-        height: 220px;
-        margin: 20px auto;
-        /* background-color: blue; */
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-
-    .about-img-div {
-        /* width: 300px;
-        height: 300px; */
-        width: 100%;
-        height: 100%;
-    }
-
-    .about-years-experience {
-        width: 100%;
-        right: 0;
-    }
-
-    .postal-services-blog {
-        width: 210px;
-        height: 200px;
-        margin: 20px auto;
-        background-color: red;
-    }
-
-    .section-postal-services {
-        padding: 0;
-    }
-
-    .terms_condotions_right {
-        width: 100%;
-        height: 250px;
-        display: block;
-    }
-
-    .postal_adress_title {
-        font-size: 65px;
-    }
-
-    .responsive-map iframe {
-        height: 500px;
-    }
-
-    .terms_left_title {
-        font-size: 36px;
-    }
-
-    .terms_conditions_or {
-        font-size: 46px;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-    .section-blog-about-flex {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .section-right-title {
-        font-size: 50px;
-        margin: 15px 0;
-    }
-
-    .about-right-content {
-        width: 100%;
-    }
-
-    .about-right-content {
-        margin-bottom: 30px;
-    }
-
-    .about-img-div {
-        width: 400px;
-        /* Daha kiçik ölçü */
-        height: auto;
-    }
-
-    .section-about-right {
-        padding: 0 20px;
-    }
 }
 
 
@@ -1369,7 +911,6 @@ a {
     content: "";
     position: absolute;
     top: 100%;
-    /* tooltip-in aşağısı */
     left: 50%;
     transform: translateX(-50%);
     border-width: 6px;
@@ -1402,4 +943,437 @@ a {
     background-color: var(--activeColor);
     transform: scale(1.04);
     color: var(--whiteColor);
+}
+
+@media only screen and (max-width: 576px) {
+    .cargo-img {
+        max-height: 300px;
+    }
+
+    .second-blog-about {
+        margin: 20px 0;
+    }
+
+    .postal-services-pos-abs img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .form-group--type .form-control {
+
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .second-blog-about {
+        margin: 40px 0;
+    }
+
+    .section-about-right {
+        padding: 0 10px;
+    }
+
+    .section-right-title {
+        font-size: 36px;
+    }
+
+    .about-right-content {
+        font-size: 22px;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+
+    .about-img-div {
+        width: 300px;
+        height: 300px;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-years-experience {
+        width: 100%;
+        right: 0;
+    }
+
+    .section-background {
+        height: auto;
+    }
+
+    .postal-services-blog {
+        margin: 25px auto;
+    }
+
+    .postal-services-pos-abs {
+        width: 50px;
+        height: 50px;
+        left: 43%;
+    }
+
+
+    .terms_condotions_right {
+        display: none;
+    }
+
+    .rules-title {
+        font-size: 18px;
+    }
+
+    .postal-services-pos-abs img {
+        width: 50px;
+        height: 30px;
+    }
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .first-blog-section {
+        height: auto;
+    }
+
+    .first-blog-section .container {
+        max-width: 100%;
+    }
+
+    .cargo-img {
+        max-height: 450px;
+        object-position: center top;
+        clip-path: none;
+    }
+
+    .transportation-title {
+        font-size: 20px;
+        color: var(--activeColor);
+        font-weight: 600;
+    }
+
+    .dark-overlay {
+        display: none;
+    }
+
+    .gray-overlay {
+        display: none;
+    }
+
+    .orange-overlay {
+        display: none;
+    }
+
+    .statistics-flex {
+        display: block;
+        display: block;
+        padding: 10px 0;
+    }
+
+
+    .slogan span {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .statistic-text {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .statistic-content {
+        margin: 10px 0;
+    }
+
+    .statistic-number {
+        font-size: 30px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .transportation-first-title {
+        justify-content: center;
+    }
+
+    .second-blog-about {
+        margin: 60px 0;
+    }
+
+    .section-blog-about-flex {
+        display: flex;
+    }
+
+    .section-about-right {
+        padding: 0;
+    }
+
+    .section-right-title {
+        margin: 2px 0;
+    }
+
+    .about-right-content {
+        font-family: var(--fontRoboto);
+        font-weight: 900;
+        font-size: 24px;
+        width: 100%;
+        margin: 20px 0;
+
+    }
+
+    .about-img-div {
+        display: none;
+    }
+
+    .section-postal-services {
+        padding: 0;
+    }
+
+    .postal-services-blog {
+        width: 300px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    .rules-flex {
+        margin: 10px 0;
+    }
+
+    .rules-title {
+        font-size: 20px;
+    }
+
+    .terms_conditions {
+        margin: 20px 0;
+    }
+
+    .terms_condotions_right {
+        width: 100%;
+        height: 250px;
+    }
+
+    .terms_left_title {
+        font-weight: 600;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .terms_condotions_left {
+        padding-right: 0;
+    }
+
+    .terms_conditions_or {
+        font-size: 36px;
+    }
+
+    .postal_adress_title {
+        margin: 40px 0;
+    }
+
+    .postal_adress_title {
+        font-size: 40px;
+    }
+
+    .responsive-map iframe {
+        height: 300px;
+    }
+
+    .brands-title {
+        font-size: 30px;
+    }
+
+    .brands-title-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .order_stamp {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .order_stamp_icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .postal_calculator .select-wrapper {
+        max-width: 100%;
+    }
+
+    .form-group--type {
+        width: 100%;
+    }
+
+    .postal_calculator .form-select {
+        font-size: 16px;
+    }
+
+    .postal-services-pos-abs img {
+        width: 50px;
+        height: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+    .section-blog-about-flex {
+        display: flex;
+    }
+
+    .about-img-div {
+        width: 496px;
+    }
+
+    .section-about-right {
+        padding: 0 20px;
+    }
+
+    .section-right-title {
+        margin: 12px 0;
+    }
+
+    .section-right-title {
+        font-size: 48px;
+    }
+
+    .about-right-content {
+        width: 100%;
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+
+    .about-years-experience {
+        width: 100%;
+    }
+
+    .section-background {
+        height: 600px;
+    }
+
+    .postal-services-pos-abs {
+        width: 60px;
+        height: 60px;
+    }
+
+    .postal-services-blog {
+        width: 200px;
+        height: 220px;
+        margin: 20px auto;
+    }
+
+    .postal-services-pos-abs img {
+        width: 50px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .section-blog-about-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .section-right-title {
+        font-size: 50px;
+        margin: 15px 0;
+    }
+
+    .about-right-content {
+        width: 100%;
+    }
+
+    .about-right-content {
+        margin-bottom: 30px;
+    }
+
+    .about-img-div {
+        width: 400px;
+        height: auto;
+    }
+
+    .section-about-right {
+        padding: 0 20px;
+    }
+
+    .about-img-div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-years-experience {
+        width: 100%;
+        right: 0;
+    }
+
+    .postal-services-blog {
+        width: 210px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    .section-postal-services {
+        padding: 0;
+    }
+
+    .terms_condotions_right {
+        width: 100%;
+        height: 250px;
+        display: block;
+    }
+
+    .postal_adress_title {
+        font-size: 65px;
+    }
+
+    .responsive-map iframe {
+        height: 500px;
+    }
+
+    .terms_left_title {
+        font-size: 36px;
+    }
+
+    .terms_conditions_or {
+        font-size: 46px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .statistics-flex {
+        padding: 80px 0;
+    }
+
+    .slogan span {
+        font-size: 90px;
+    }
+
+    .statistic-number {
+        font-size: 60px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    .transportation-title {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .transportation-hr {
+        display: inline-block;
+        width: 86px;
+        height: 2px;
+        margin-right: 24px;
+    }
+
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        font-family: var(--fontSarabun);
+    }
+
+    .slogan span {
+        font-size: 100px;
+        position: relative;
+        top: -5px;
+        font-weight: 600;
+    }
 }
