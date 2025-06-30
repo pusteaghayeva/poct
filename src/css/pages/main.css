@@ -802,7 +802,7 @@ a {
 
 /* calculator */
 .postal_calculator {
-    margin: 60px 0;
+    margin: 60px auto;
 }
 
 .postal_calculator .form-select {
@@ -817,6 +817,10 @@ a {
 .postal_calculator .select-wrapper {
     position: relative;
     max-width: 85%;
+}
+
+.postal_calculator form {
+    overflow: hidden;
 }
 
 .shipping_method {
@@ -1063,7 +1067,8 @@ a {
     .statistics-flex {
         display: block;
         display: block;
-        padding: 10px 0;
+        /* padding: 10px 0; */
+        padding: 20px 0;
     }
 
 
