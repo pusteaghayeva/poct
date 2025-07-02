@@ -5,15 +5,11 @@
 
 .company-about {
     background-color: var(--aboutColor);
-    /* margin: 151px 0; */
-    /* font-family: var(--fontSarabun); */
     font-weight: 800;
     text-align: center;
     width: 90%;
     border-radius: 16px;
-    /* margin: 34px auto 68px auto; */
     margin: 0 auto 30px auto;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,14 +27,9 @@
 .company-about-text {
     font-size: 24px;
     line-height: 56px;
-    /* width: 80%; */
     margin: 0 auto;
     padding: 21px 91px 91px 91px;
     color: var(--aboutColorWhite);
-}
-
-.company-count {
-    /* background-color: red; */
 }
 
 .company-count-title {
@@ -50,7 +41,6 @@
     text-align: center;
     line-height: 70px;
     padding: 53px 0;
-
 }
 
 .company-org-title {
@@ -90,7 +80,6 @@
     font-size: 30px;
     line-height: 50px;
     display: flex;
-    /* align-items: center; */
     word-break: break-word;
     text-align: justify;
 }
@@ -101,8 +90,6 @@
     max-width: 48%;
 }
 
-
-/* company-mission */
 .company-mission {
     margin: 84px 0 12px;
 }
@@ -157,9 +144,6 @@
     border-radius: 3px;
 }
 
-
-
-
 .mission-col:hover .mission-icon {
     left: 30px;
     opacity: 0.3;
@@ -167,7 +151,6 @@
 }
 
 /* management */
-
 .management {
     margin: 72px 0;
 }
@@ -204,10 +187,6 @@
     flex-direction: column;
 }
 
-/* .management .owl-carousel .thumbnail .caption .flex-text {
-    flex-grow: 1;
-} */
-
 .management-img {
     width: 333px;
     height: 237px;
@@ -219,7 +198,6 @@
 .caption {
     margin: 0 auto;
     font-family: var(--fontInter);
-
 }
 
 .management-name {
@@ -251,8 +229,6 @@
 .thumbnail .management-name {
     transition: all 0.4s ease;
 }
-
-/* post konversiyasi */
 
 .postal_convention {
     margin: 68px 0;
@@ -292,7 +268,6 @@
     font-size: 24px;
     letter-spacing: 1px;
     color: var(--aboutColorWhite);
-    /* padding: 0 44px; */
 }
 
 .postal_convention_pdf {
@@ -325,7 +300,6 @@
 
 .postal_convention_abs {
     z-index: -1;
-    /* hovera mane olmasın */
 }
 
 .postal_convention_right, .postal_convention_left {
@@ -349,26 +323,16 @@
 .postal_convention_left:hover {
     background: linear-gradient(180deg, #FDB235 0%, #FF5E41 100%);
     transition: all .5s ease-in-out;
-
 }
 
 .postal_convention_icon {
     margin-left: 16px;
     display: inline-block;
     transition: transform 0.4s ease;
-    /* Yumşaq keçid üçün */
 }
 
 .postal_convention_left:hover .postal_convention_icon {
     transform: translateX(12px);
-    /* Sağ tərəfə hərəkət */
-}
-
-
-/* legal documents */
-.legal_documents {
-    /* background-color: red; */
-
 }
 
 .legal_documents_title {
@@ -379,7 +343,6 @@
     margin: 36px 0;
     text-align: center;
     color: var(--aboutColor);
-
 }
 
 .financial_statements {
@@ -466,7 +429,6 @@
         margin: 10px auto;
         max-width: 100%;
         text-align: center;
-
     }
 
     .postal_convention_first {
@@ -498,7 +460,6 @@
 }
 
 @media(max-width: 1200px) {
-
 
     .company-count-left,
     .company-count-right {
@@ -544,7 +505,6 @@
         height: auto;
         padding: 30px;
         height: auto;
-        background-color: red;
         min-height: 350px;
     }
 
