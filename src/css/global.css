@@ -8,3 +8,5 @@
 
 /* pages */
 @import url('./pages/main.css');
+@import url('./pages/company.css');
+@import url('./pages/human_resources.css');

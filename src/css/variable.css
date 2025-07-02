@@ -3,6 +3,7 @@
     --fontRoboto: "Roboto", sans-serif;
     --fontSarabun: "Sarabun", sans-serif;
     --fontPoppins: " Poppins", sans-serif;
+    --fontInter: "Inter", sans-serif;
     --fontSans: "DM Sans", sans-serif;
     --blackColor: #000000;
     --whiteColor: #fff;
@@ -11,4 +12,12 @@
     --termsColor: rgba(34, 34, 34, 1);
     --rulesColor: rgba(122, 122, 122, 1);
     --footerBg: #222222;
+    --aboutColor: rgba(255, 94, 65, 1);
+    --aboutColorWhite: rgba(255, 255, 255, 1);
+    --managementTextColor: rgba(2, 3, 59, 1);
+    --pdfBackground: rgba(67, 53, 222, 1);
+
+
+
+
 }

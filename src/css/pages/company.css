@@ -1,0 +1,554 @@
+.company {
+    font-family: var(--fontSarabun);
+    margin-top: 180px;
+}
+
+.company-about {
+    background-color: var(--aboutColor);
+    /* margin: 151px 0; */
+    /* font-family: var(--fontSarabun); */
+    font-weight: 800;
+    text-align: center;
+    width: 90%;
+    border-radius: 16px;
+    /* margin: 34px auto 68px auto; */
+    margin: 0 auto 30px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.company-title {
+    font-weight: 800;
+    font-size: 64px;
+    text-align: center;
+    color: var(--aboutColorWhite);
+    padding: 39px 0 0;
+}
+
+.company-about-text {
+    font-size: 24px;
+    line-height: 56px;
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 21px 91px 91px 91px;
+    color: var(--aboutColorWhite);
+}
+
+.company-count {
+    /* background-color: red; */
+}
+
+.company-count-title {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 64px;
+    text-align: center;
+    line-height: 70px;
+    padding: 53px 0;
+
+}
+
+.company-org-title {
+    color: var(--aboutColor);
+}
+
+.company-count-flex {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+
+
+.company-count-left,
+.company-count-right {
+    flex: 1;
+}
+
+.company-count-left-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 32px;
+}
+
+.company-count-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.company-count-right {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    /* align-items: center; */
+    word-break: break-word;
+    text-align: justify;
+}
+
+
+.company-count-left,
+.company-count-right {
+    max-width: 48%;
+}
+
+
+/* company-mission */
+.company-mission {
+    margin: 84px 0 12px;
+}
+
+.company-mission-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 28px;
+    color: var(--aboutColor);
+    margin-bottom: 20px;
+
+}
+
+.company-mission-text {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.mission-col {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.mission-icon {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%) rotate(-25deg);
+    font-size: 150px;
+    color: var(--activeColor);
+    opacity: 0;
+    transition: all 0.6s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.mission-col:hover .mission-icon {
+    left: 30px;
+    opacity: 0.08;
+}
+
+.mission-col:hover {
+    background-color: #fff8e1;
+    border-radius: 3px;
+}
+
+
+
+
+.mission-col:hover .mission-icon {
+    left: 30px;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+/* management */
+
+.management {
+    margin: 72px 0;
+}
+
+.management-title {
+    font-weight: 800;
+    font-size: 56px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--activeColor);
+    line-height: 1;
+    margin-bottom: 72px;
+}
+
+/* carousel */
+.management .owl-carousel .owl-stage {
+    display: flex;
+}
+
+.management .owl-carousel .owl-item {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.management .owl-carousel .thumbnail {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.management .owl-carousel .thumbnail .caption {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+/* .management .owl-carousel .thumbnail .caption .flex-text {
+    flex-grow: 1;
+} */
+
+.management-img {
+    width: 333px;
+    height: 237px;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.caption {
+    margin: 0 auto;
+    font-family: var(--fontInter);
+
+}
+
+.management-name {
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    color: var(--activeColor);
+}
+
+.management-flex-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.thumbnail:hover .management-img {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.thumbnail:hover .management-name {
+    color: #2980b9;
+    transition: color 0.4s ease;
+}
+
+.thumbnail .management-img,
+.thumbnail .management-name {
+    transition: all 0.4s ease;
+}
+
+/* post konversiyasi */
+
+.postal_convention {
+    margin: 68px 0;
+}
+
+.postal_convention_first {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.postal_convention_abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.postal_convention_left {
+    position: relative;
+    background: linear-gradient(180deg, #FF5E41 0%, #FDB235 100%);
+    height: 296px;
+    border-radius: 48px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 44px;
+}
+
+.postal_convention_title {
+    font-family: var(--fontSarabun);
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: var(--aboutColorWhite);
+    /* padding: 0 44px; */
+}
+
+.postal_convention_pdf {
+    background-color: var(--pdfBackground);
+    margin-top: 22px;
+    width: auto;
+    height: 50px;
+    border-radius: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--aboutColorWhite);
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.postal_convention_icon {
+    margin-left: 16px;
+}
+
+.postal_convention_right {
+    font-family: var(--fontSarabun);
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: 3px;
+    color: var(--aboutColor);
+}
+
+.postal_convention_abs {
+    z-index: -1;
+    /* hovera mane olmasın */
+}
+
+.postal_convention_right, .postal_convention_left {
+    max-width: 48%;
+}
+
+.postal_convention_left.with-max,
+.postal_convention_right.with-max {
+    max-width: 48%;
+    margin: 50px auto;
+}
+
+.postal_convention_left {
+    background: linear-gradient(180deg, #FF5E41 0%, #FDB235 100%);
+    transition: all 0.6s ease;
+    cursor: pointer;
+    margin: 50px;
+    max-width: 100%;
+}
+
+.postal_convention_left:hover {
+    background: linear-gradient(180deg, #FDB235 0%, #FF5E41 100%);
+    transition: all .5s ease-in-out;
+
+}
+
+.postal_convention_icon {
+    margin-left: 16px;
+    display: inline-block;
+    transition: transform 0.4s ease;
+    /* Yumşaq keçid üçün */
+}
+
+.postal_convention_left:hover .postal_convention_icon {
+    transform: translateX(12px);
+    /* Sağ tərəfə hərəkət */
+}
+
+
+/* legal documents */
+.legal_documents {
+    /* background-color: red; */
+
+}
+
+.legal_documents_title {
+    font-family: var(--fontSarabun);
+    font-weight: 800;
+    font-size: 64px;
+    letter-spacing: 3px;
+    margin: 36px 0;
+    text-align: center;
+    color: var(--aboutColor);
+
+}
+
+.financial_statements {
+    margin: 80px 0;
+}
+
+@media (max-width: 768px) {
+    .company-count-flex {
+        flex-direction: column;
+    }
+
+    .company {
+        margin-top: 100px;
+    }
+
+    .company-title {
+        font-size: 32px;
+        padding: 15px 0 0;
+    }
+
+    .company-about-text {
+        padding: 15px 30px;
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .company-about {
+        width: 100%;
+    }
+
+    .company-count-title {
+        font-size: 30px;
+        width: 100%;
+        padding: 0 0 20px;
+        line-height: 45px;
+        font-weight: 700;
+    }
+
+    .company-count-right {
+        line-height: normal;
+        font-size: 20px;
+    }
+
+    .mission-icon {
+        font-size: 100px;
+        left: -80px;
+    }
+
+    .company-mission {
+        margin: 40px 0 12px;
+    }
+
+    .mission-col {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .mission-col:hover .mission-icon {
+        left: 20px;
+    }
+
+    .company-mission-title {
+        font-size: 24px;
+    }
+
+    .company-mission-text {
+        font-size: 20px;
+    }
+
+    .management {
+        margin: 30px 0;
+    }
+
+    .management-title {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .postal_convention {
+        margin: 0;
+    }
+
+    .postal_convention_left.with-max, .postal_convention_right.with-max {
+        margin: 10px auto;
+        max-width: 100%;
+        text-align: center;
+
+    }
+
+    .postal_convention_first {
+        flex-direction: column;
+    }
+
+
+    .postal_convention_right {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .legal_documents_title {
+        font-size: 40px;
+    }
+
+    .postal_convention_title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .postal_convention_left {
+        margin: 15px auto;
+        height: auto;
+        padding: 30px;
+        height: auto;
+    }
+
+}
+
+@media(max-width: 1200px) {
+
+
+    .company-count-left,
+    .company-count-right {
+        max-width: 100%;
+    }
+
+    .company-count-left-img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .company {
+        margin-top: 100px;
+    }
+
+    .company-title {
+        font-size: 38px;
+        padding: 15px 0 0;
+    }
+
+    .company-about-text {
+        padding: 30px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+
+    .company-count-left {
+        align-items: flex-start;
+    }
+
+    .company-count-right {
+        line-height: normal;
+        font-size: 22px;
+    }
+
+    .company-count-flex {
+        gap: 16px;
+    }
+
+    .postal_convention_left {
+        margin: 15px auto;
+        height: auto;
+        padding: 30px;
+        height: auto;
+        background-color: red;
+        min-height: 350px;
+    }
+
+    .postal_convention_title {
+        font-weight: 700
+    }
+}
