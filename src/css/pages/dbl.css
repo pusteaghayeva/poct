@@ -1,0 +1,34 @@
+.dbl-img-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dbl_read_other_posts {
+    margin: 20px 0;
+}
+
+.dbl_read_other_posts .read_other_posts {
+    margin: 20px 0;
+}
+
+@media (max-width:1400px) {
+    .dbl-img-flex .history-img-main {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .dbl-img-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .dbl-img-flex .history-img-main {
+        margin: 10px 0;
+
+    }
+
+}

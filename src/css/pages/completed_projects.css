@@ -1,0 +1,15 @@
+.completed_projects {
+    margin-top: 130px;
+}
+
+.completed-projects-bg {
+    height: 494px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.completed_others_posts {
+    margin: 80px 0;
+}

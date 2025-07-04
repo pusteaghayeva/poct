@@ -1,54 +1,5 @@
-
-$('.navTrigger').click(function () {
-  $(this).toggleClass('active');
-  console.log("Clicked menu");
-  $("#mainListDiv").toggleClass("show_list");
-  $("#mainListDiv").fadeIn();
-
-});
-
-$(document).ready(function () {
-  $("#useful-links").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: true,
-    autoplay: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      1000: {
-        items: 2
-      },
-      1025: {
-        items: 3
-      }
-    }
-  });
-});
-
-// back to top
-var btn = $('#button');
-
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function (e) {
-  e.preventDefault();
-  $('html, body').animate({ scrollTop: 0 }, '300');
-});
-// management carousel
 jQuery(document).ready(function ($) {
-	var owl = $("#owl-demo-2");
+	var owl = $("#owl-demo-3");
 	owl.owlCarousel({
 		autoplay: true,
 		autoplayTimeout: 1000,
@@ -74,24 +25,21 @@ jQuery(document).ready(function ($) {
 		responsive: {
 			0: {
 				items: 1
-				// nav: true
 			},
 			320: {
 				items: 1,
 				nav:false
 			},
 			480: {
-				items: 2,
+				items: 1,
 				nav: false
 			},
 			768: {
 				items: 2,
-				// nav: true,
 				loop: false
 			},
 			992: {
 				items: 3,
-				// nav: true,
 				loop: false
 			}
 		},
@@ -122,5 +70,17 @@ jQuery(document).ready(function ($) {
 	$(".prev").click(function () {
 		owl.trigger("owl.prev");
 	});
-});
+});  
 
+
+// more read
+  document.querySelectorAll(".caption-more").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            const text = btn.previousElementSibling; 
+            const isOpen = text.classList.contains("open");
+
+            text.classList.toggle("open");
+
+            btn.textContent = isOpen ? "Daha çox oxu" : "Gizlət";
+        });
+    });

@@ -1,0 +1,114 @@
+.membership {
+    margin: 56px 0;
+    font-family: var(--fontSarabun);
+
+}
+
+.membership-text {
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.membership-img {
+    width: auto;
+    height: 472px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.awards-right {
+    font-weight: 300;
+    font-size: 36px;
+    color: var(--menuColor);
+
+}
+
+.awards-links {
+    margin: 72px 0;
+}
+
+.awards-links .owl-carousel .owl-stage {
+    display: flex;
+}
+
+.awards-links .owl-carousel .owl-item {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.awards-links .owl-carousel .thumbnail {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.awards-links .owl-carousel .thumbnail .caption {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+.awards-links-img {
+    width: 260px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.awards-flex {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.awards-left,
+.awards-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.awards-left-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .membership {
+        margin: 20px 0;
+    }
+
+    .membership-text {
+        font-size: 22px;
+    }
+
+    .membership-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .awards-right {
+        font-size: 20px;
+    }
+
+    .awards-flex {
+        flex-direction: column;
+    }
+
+    .awards-left,
+    .awards-right {
+        max-width: 100%;
+    }
+
+    .awards-left-img {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .awards-right {
+        font-size: 26px;
+    }
+}

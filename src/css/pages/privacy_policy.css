@@ -1,0 +1,18 @@
+.privacy_policy .company-about-text {
+    line-height: normal;
+}
+
+.static-title {
+    font-family: Sarabun;
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--aboutColor);
+    text-align: center;
+}
+
+.static-content {
+    font-family: var(--fontSarabun);
+    font-weight: 400;
+    font-size: 36px;
+
+}

@@ -1,0 +1,406 @@
+.us_different {
+    margin: 75px auto;
+    font-family: var(--fontSarabun);
+
+}
+
+.us_different_main_title {
+    /* font-family: var(--fontSarabun); */
+    font-weight: 600;
+    font-size: 64px;
+    text-align: center;
+    color: var(--aboutColor);
+}
+
+.us_different_title {
+    /* font-family: var(--fontSarabun); */
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    color: var(--aboutColor);
+    margin-bottom: 20px;
+}
+
+.us_different_col {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+    max-width: 80%;
+}
+
+.us_different_text {
+    font-weight: 400;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.us_different_icon {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%) rotate(-25deg);
+    font-size: 150px;
+    color: var(--activeColor);
+    opacity: 0;
+    transition: all 0.6s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* 
+.us_different_col:hover {
+    background-color: #fff8e1;
+    border-radius: 3px;
+}
+
+.us_different:hover .us_different_icon {
+    left: 30px;
+    opacity: 0.3;
+    filter: blur(1px);
+} */
+
+/* .us_different_col:hover {
+    background-color: var(--activeColor);
+    border-radius: 5px;
+}
+
+.us_different_col:hover .us_different_icon {
+    left: 30px;
+    opacity: 0.3;
+    filter: blur(1px);
+    color: white;
+} */
+
+/* .us_different_col:hover .us_different_title {
+    color: var(--whiteColor);
+} */
+
+/* 
+.us_different_col:hover {
+    background-color: var(--activeColor);
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.us_different_col:hover .us_different_title {
+    background: linear-gradient(90deg, #FDB235, #FF5E41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.5s ease;
+} */
+
+.us_different_col:hover {
+    background-color: var(--activeColor);
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.us_different_col:hover .us_different_icon {
+    top: 10%;
+    left: 30px;
+    opacity: 0.25;
+    filter: none;
+    color: white;
+    transform: rotate(10deg) scale(1.15);
+    animation: glow 1.5s infinite alternate;
+    color: red;
+}
+
+.us_different_col:hover .us_different_title {
+    background: linear-gradient(90deg, #ebe8e3, #e8afa6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #FDB235, 0 0 30px #FF5E41;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 40px #FDB235, 0 0 60px #FF5E41;
+    }
+}
+
+/* Vakansiya */
+.vacancy {}
+
+.vacancy-blog {}
+
+.vacancy-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    margin: 25px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s ease;
+    transform: scale(1);
+}
+
+.vacancy-flex:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.vacancy-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+}
+
+.vacancy-more {
+    display: inline-block;
+    padding: 10px 26px;
+    width: 104px;
+    height: 49px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: var(--aboutColor);
+    background: transparent;
+    border: 1px solid var(--aboutColor);
+    border-radius: 24px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.vacancy-more::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: var(--aboutColor);
+    transition: width 0.4s ease;
+}
+
+.vacancy-more:hover {
+    color: white;
+    background-color: var(--aboutColor);
+}
+
+.vacancy-more:hover::after {
+    width: 60%;
+}
+
+.vacancy-icon {
+    width: 64px;
+    height: 64px;
+    background: url('/src/img/vacancy7.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    flex-shrink: 0;
+}
+
+.vacancy-flex:hover .vacancy-icon {
+    opacity: 1;
+}
+
+.human_resources_more {
+    margin: 96px auto;
+
+}
+
+/* career-path */
+.career-path {}
+
+
+/* carousel */
+.career-path .owl-carousel .owl-stage {
+    display: flex;
+}
+
+.career-path .owl-carousel .owl-item {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.career-path .owl-carousel .thumbnail {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.career-path .owl-carousel .thumbnail .caption {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+.career-path-img {
+    width: 352px;
+    height: 219px;
+    object-fit: cover;
+    /* border-top-left-radius: 30px; */
+    border-top-right-radius: 30px;
+}
+
+.caption {
+    margin: 0 auto;
+    font-family: var(--fontInter);
+}
+
+.career-path-name {
+    margin: 20px 0 10px;
+    color: var(--activeColor);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15.4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    color: var(--aboutColor);
+    border-radius: 32px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.career-path-flex-text {
+    font-family: var(--fontInter);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--menuColor);
+
+}
+
+.thumbnail:hover .career-path-img {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.thumbnail .career-path-img,
+.thumbnail .career-path-name {
+    transition: all 0.4s ease;
+}
+
+.caption-more {
+    position: relative;
+    cursor: pointer;
+    color: var(--aboutColor);
+    font-weight: 400;
+    font-size: 18px;
+    user-select: none;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 3px;
+    /* xətt üçün yer */
+    max-width: max-content;
+    /* sözün eni qədər genişlik */
+    margin: 17px 0;
+}
+
+.caption-more::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--aboutColor);
+    transition: width 0.4s ease;
+}
+
+.caption-more:hover::after {
+    width: 100%;
+    /* sözün tam eni qədər xətt */
+}
+
+
+.career-path-flex-text {
+    font-family: var(--fontInter);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--menuColor);
+    max-height: 130px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.6s ease;
+}
+
+.career-path-flex-text.open {
+    max-height: 1000px;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+}
+
+@media (max-width: 768px) {
+    .us_different_main_title {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .us_different_col {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .us_different_title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .us_different_text {
+        font-size: 20px;
+    }
+
+    .vacancy-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .vacancy-icon {
+        display: none;
+    }
+
+    .vacancy-more {
+        margin-top: 20px;
+    }
+
+    .vacancy-title {
+        font-size: 18px;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 1200px) {
+    .us_different_title {
+        font-size: 32px;
+    }
+
+    .us_different_text {
+        font-size: 24px;
+    }
+
+
+}
