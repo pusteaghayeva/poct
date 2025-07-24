@@ -134,16 +134,14 @@
 }
 
 /* Vakansiya */
-.vacancy {}
 
-.vacancy-blog {}
 
 .vacancy-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: #ffffff;
+    background-color: var(--humanResourceBg);
     padding: 20px 30px;
     border: 1px solid #e5e7eb;
     border-radius: 24px;
@@ -221,6 +219,14 @@
 .vacancy-flex:hover .vacancy-icon {
     opacity: 1;
 }
+.vacancy-flex {
+    display: none;
+}
+.vacancy-flex.visible {
+  display: flex;
+}
+
+
 
 .human_resources_more {
     margin: 96px auto;
@@ -403,4 +409,12 @@
     }
 
 
+}
+
+.vacancy-flex {
+    display: none;
+}
+
+.vacancy-flex.visible {
+    display: flex;
 }

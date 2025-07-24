@@ -124,3 +124,90 @@ jQuery(document).ready(function ($) {
 	});
 });
 
+
+
+// More
+// document.addEventListener("DOMContentLoaded", function () {
+//         const faqs = document.querySelectorAll('.faq-drawer');
+//         const toggleBtn = document.getElementById('toggleFaqs');
+//         const toggleText = toggleBtn.querySelector('span');
+//         let visibleCount = 3;
+//         const increment = 3;
+
+//         function updateFaqVisibility() {
+//             faqs.forEach((faq, index) => {
+//                 if (index < visibleCount) {
+//                     faq.classList.add('visible');
+//                 } else {
+//                     faq.classList.remove('visible');
+//                 }
+//             });
+
+//             if (visibleCount >= faqs.length) {
+//                 toggleText.textContent = "Daha az";
+//             } else {
+//                 toggleText.textContent = "Daha çox";
+//             }
+//         }
+
+//         toggleBtn.addEventListener('click', function () {
+//             if (visibleCount >= faqs.length) {
+//                 visibleCount = 4;
+//             } else {
+//                 visibleCount += increment;
+//             }
+
+//             updateFaqVisibility();
+//         });
+
+//         // İlk dəfə yüklənəndə göstər
+//         updateFaqVisibility();
+//     });
+document.addEventListener("DOMContentLoaded", function () {
+    function setupToggle(sectionSelector, itemSelector, toggleBtnId, defaultCount = 3, increment = 3) {
+        const items = document.querySelectorAll(sectionSelector + " " + itemSelector);
+        const toggleBtn = document.getElementById(toggleBtnId);
+        if (!toggleBtn) return;
+
+        const toggleText = toggleBtn.querySelector('span');
+        let visibleCount = defaultCount;
+
+        function updateVisibility() {
+            items.forEach((item, index) => {
+                if (index < visibleCount) {
+                    item.classList.add('visible');
+                } else {
+                    item.classList.remove('visible');
+                }
+            });
+
+            if (visibleCount >= items.length) {
+                toggleText.textContent = "Daha az";
+            } else {
+                toggleText.textContent = "Daha çox";
+            }
+        }
+
+        toggleBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            if (visibleCount >= items.length) {
+                visibleCount = defaultCount;
+            } else {
+                visibleCount += increment;
+                if (visibleCount > items.length) visibleCount = items.length;
+            }
+
+            updateVisibility();
+        });
+
+        updateVisibility();
+    }
+
+    // Əvvəlki çağırışlar...
+    setupToggle('.vacancy-blog', '.vacancy-flex', 'toggleVacancies', 2, 5);
+    setupToggle('.faqs .container', '.faq-drawer', 'toggleFaqs', 3, 3);
+
+    // Maliyyə hesabatları üçün yeni çağırış
+    setupToggle('.financial_statements .row', '.postal_convention_left', 'toggleFinancialStatements', 4, 3);
+});

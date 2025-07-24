@@ -1,0 +1,213 @@
+.application_for_services {
+    /* background-color: red; */
+}
+
+.application_services_card {
+    /* background-color: yellow; */
+    margin: 50px 0;
+}
+
+.application_services_title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--aboutColor);
+    margin-bottom: 26px;
+}
+
+.application_services_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.application_services_img {
+    width: 612px;
+    height: 546px;
+    object-fit: cover;
+}
+
+.application_services_right {}
+
+.application_services_content {
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--menuColor);
+}
+
+.application_services_apply {
+    font-weight: 600;
+    font-size: 38px;
+    text-align: center;
+    color: var(--postalServicesBorder);
+    border: 1px solid rgba(237, 94, 59, 1);
+    width: 100%;
+    text-align: center;
+    display: block;
+    border-radius: 24px;
+    margin-top: 22px;
+}
+
+
+.application_services_img {
+    width: 612px;
+    object-fit: cover;
+    flex: 1;
+    height: auto;
+    transition: transform 0.4s ease;
+    z-index: 2;
+    position: relative;
+    border-radius: 12px;
+}
+
+.application_services_right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.application_services_card:nth-child(even) .application_services_flex {
+    flex-direction: row-reverse;
+}
+
+
+.application_services_card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    border-radius: 20px;
+    background: #fff;
+}
+
+/* Overlay */
+.application_services_card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(237, 94, 59, 0.05);
+    /* narıncımsı overlay */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.application_services_card:hover::before {
+    opacity: 1;
+}
+
+/* Şəklin rotate effekti */
+.application_services_img {}
+
+.application_services_card:hover .application_services_img {
+    transform: scale(1.03) rotate(1.5deg);
+}
+
+/* Content yüngül animate */
+.application_services_content {
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+    transform: translateY(10px);
+    opacity: 0.9;
+}
+
+.application_services_card:hover .application_services_content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Buton içində ox animasiyası */
+.application_services_apply {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.application_services_apply::after {
+    content: "→";
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.application_services_card:hover .application_services_apply {
+    padding-right: 40px;
+    color: #fff;
+    background-color: var(--postalServicesBorder);
+    border-color: var(--postalServicesBorder);
+}
+
+.application_services_card:hover .application_services_apply::after {
+    right: 15px;
+    opacity: 1;
+}
+
+.application_services_img {
+    transition: transform 0.4s ease;
+    z-index: 2;
+    position: relative;
+    border-radius: 12px;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+.application_services_card:hover .application_services_img {
+    transform: scale(0.95) perspective(800px) translateZ(-10px);
+    transform: scale(0.9) perspective(1000px) translateZ(-20px);
+
+}
+
+
+/* @media (max-width: 1200px) {
+    .application_services_flex {
+        gap: 5px;
+    }
+} */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .application_services_img {
+        width: 45%;
+    }
+
+    .application_services_right {
+        width: 55%;
+    }
+
+    .application_services_flex {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width:992px) {
+    .application_services_flex {
+        display: block;
+    }
+
+    .application_services_title {
+        font-size: 36px;
+    }
+
+    .application_services_img {
+        width: 100%;
+    }
+
+    .application_services_content {
+        font-size: 24px;
+    }
+
+    .application_services_apply {
+        font-size: 22px;
+        margin: 30px 0;
+    }
+
+    .application_services_card {
+        margin: 10px 0;
+    }
+}

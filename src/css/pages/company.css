@@ -24,6 +24,7 @@
     padding: 39px 0 0;
 }
 
+
 .company-about-text {
     font-size: 24px;
     line-height: 56px;
@@ -563,4 +564,13 @@
     .postal_convention_title {
         font-weight: 700
     }
+}
+
+.financial_statements .postal_convention_left {
+    display: none;
+}
+
+.financial_statements .postal_convention_left.visible {
+    display: flex; /* Və ya sənin hazırkı dizayna uyğun */
+    flex-direction: column;
 }

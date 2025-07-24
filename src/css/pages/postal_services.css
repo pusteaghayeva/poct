@@ -1,0 +1,44 @@
+.shipment_number {
+    /* background-color: red; */
+    margin: 50px 0;
+}
+
+.postal_services_number_text {
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 34px;
+    font-family: var(--fontSarabun);
+
+}
+
+.services-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.services-flex-a {
+    margin-right: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid var(--postalServicesBorder);
+    border-radius: 24px;
+    font-family: var(--fontSarabun);
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: var(--postalServicesBorder);
+}
+
+@media (max-width: 576px) {
+    .services-flex {
+        display: block;
+
+    }
+
+    .services-flex-a {
+        margin: 10px 0;
+    }
+}

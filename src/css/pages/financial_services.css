@@ -1,0 +1,130 @@
+.online-payment-row {
+    margin: 80px auto;
+    max-width: 83%;
+}
+
+.online_payment_blog {
+    background-color: var(--aboutColor);
+    width: 86%;
+    height: 301px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    transition: all 0.4s ease;
+}
+
+.online_payment_blog:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #2c3e50;
+}
+
+.online_payment_abs {
+    position: absolute;
+    top: -15%;
+    width: 94px;
+    height: 94px;
+    background-color: var(--termsColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.online_payment_blog:hover .online_payment_abs {
+    background-color: var(--activeColor);
+    transform: rotate(360deg);
+}
+
+.online_payment_blog:hover .online_payment_abs img {
+    filter: invert(1);
+    transition: filter 0.4s ease;
+}
+
+.online_payment_title {
+    color: var(--aboutColorWhite);
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 40px;
+    transition: color 0.4s ease;
+}
+
+.online_payment_blog:hover .online_payment_title {
+    color: #ffd700;
+}
+
+.online_payment_more {
+    text-decoration: underline;
+    color: var(--aboutColorWhite);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: all 0.4s ease;
+    position: relative;
+    padding-left: 0;
+}
+
+.online_payment_blog:hover .online_payment_more {
+    padding-left: 12px;
+    color: #ffffff;
+}
+
+.online_payment_more::after {
+    content: "→";
+    position: absolute;
+    right: -20px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.online_payment_blog:hover .online_payment_more::after {
+    right: -30px;
+    opacity: 1;
+}
+
+
+.online-payment-row2 {
+    max-width: 100%;
+}
+
+.online_payment_blog2 {
+    width: 90%;
+}
+
+.online_payment_more2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+.online-payment-row2 .online_payment_title {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.online_payment_more2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    color: var(--aboutColorWhite);
+}
+
+.online-payment-row2 {
+    margin: 80px 0;
+}

@@ -1384,3 +1384,32 @@ a {
         font-weight: 600;
     }
 }
+
+
+/* Pagination */
+.pagination-nav{
+    position: relative;
+}
+.pagination-flex {
+    margin: 50px 0 40px;
+}
+
+.pagination{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pagination .page-link {
+    color: var(--logoColor) !important;
+    background-color: #fff !important;
+    width: 33px !important;
+    border-color: var(--logoColor) !important;
+}
+
+.pagination .active span {
+    background-color: var(--logoColor) !important;
+    border-color: var(--logoColor) !important;
+    color: #fff !important;
+}

@@ -1,0 +1,146 @@
+.shipment_title {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.customs__follow__default {
+    background-color: var(--customsDefaultBg);
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 97px 0 20px;
+}
+
+.customs__follow__default h3 {
+
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--menuColor);
+}
+
+.example {
+    background-color: var(--exampleBg);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: var(--menuColor);
+    padding: 54px;
+    margin: 21px 0;
+}
+
+.banner__search {
+    max-width: 600px;
+    margin: 56px auto 45px auto;
+    position: relative;
+}
+
+.banner__search .form-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ff5a3c;
+    border-radius: 30px;
+    padding: 5px 15px;
+    background-color: #fff;
+    box-shadow: 0 6px 16px rgba(255, 90, 60, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.banner__search .form-group:focus-within {
+    box-shadow: 0 8px 20px rgba(255, 90, 60, 0.35);
+}
+
+.banner__search .form-control {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #333;
+    font-family: inherit;
+}
+
+.banner__search .form-control::placeholder {
+    color: #999;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.banner__search .btn {
+    background-color: var(--aboutColor);
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.banner__search .btn span {
+    display: none;
+}
+
+.banner__search .btn::before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--aboutColorWhite);
+}
+
+.banner__search .form-control:focus {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.banner__search .btn:hover,
+.banner__search .btn:focus,
+.banner__search .btn:active {
+    background-color: var(--activeColor);
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .customs__follow__default {
+        width: 90%;
+        text-align: center;
+    }
+
+    .customs__follow__default h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width:992px) {
+    .shipment_title {
+        font-size: 30px;
+    }
+
+    .banner__search .form-control::placeholder {
+        color: #999;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .customs__follow__default {
+        width: 100%;
+    }
+
+    .customs__follow__default h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .example {
+        font-size: 26px;
+    }
+}

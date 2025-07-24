@@ -1,0 +1,127 @@
+.customs_eclaration {}
+
+.customs_eclaration_bg {
+    background: #D9D9D980;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    padding: 55px 43px;
+    border-radius: 50px;
+    width: 90%;
+    margin: 50px auto 20px;
+}
+
+.customs_eclaration_bg2,
+.customs_eclaration_youtube {
+    width: 75%;
+    margin: 30px auto;
+}
+
+
+.customs_eclaration_bg2 {
+    margin-bottom: 55px;
+}
+
+.customs_eclaration_text {
+    /* font-weight: 400px; */
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.customs_span {
+    color: var(--activeColor);
+}
+
+.customs_eclaration_youtube {}
+
+.customs_videos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.customs_video_link {
+    display: block;
+    color: var(--activeColor);
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.customs_apply {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.customs_apply_img {
+    width: 100%;
+    height: 100%;
+    width: 479px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.custom_apply_content {
+    background-color: var(--customBg);
+    border-radius: 50px;
+    font-size: 30px;
+    color: var(--blackColor);
+    padding: 25px;
+    text-align: center;
+}
+
+.customs_apply_btn {
+    width: 80%;
+    border-radius: 14px;
+    font-size: 38px;
+}
+
+@media (max-width: 992px) {
+    .customs_apply_img {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .customs_eclaration_bg {
+        font-size: 36px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .customs_eclaration_bg {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .customs_apply_img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .customs_eclaration_bg {
+        /* padding: 20px; */
+    }
+
+    .customs_eclaration_text {
+        font-size: 20px;
+    }
+
+    .customs_video_link {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .custom_apply_content {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .customs_apply_btn {
+        font-size: 20px;
+    }
+}

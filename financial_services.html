@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon">
+    <title>N-POCT</title>
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- navbar -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./src/css/global.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <i class='bx bx-menu'></i>
+                <div class="logo"><a href="./index.html">
+                        <img src="./src/img/logo.png" class="logo-img" alt="">
+                    </a></div>
+                <div class="nav-links">
+                    <div class="sidebar-logo">
+                        <img src="./src/img/logo.png" alt="">
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <ul class="links">
+                        <li>
+                            <a href="#">Haqqımızda</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                                <li><a href="./company.html">Şirkət</a></li>
+                                <li><a href="./human_resources.html">İnsan resursları</a></li>
+                                <li><a href="./international_relations.html">Beynəlxalq əlaqələr</a></li>
+                                <li><a href="./history_and_today.html">Tarix və bu gün</a></li>
+                                <li><a href="./completed_projects.html">İcra olunmuş layihələr</a></li>
+                                <li><a href="./privacy_policy.html">Məxfilik siyasəti</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Xidmətlər</a>
+                            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                            <ul class="js-sub-menu sub-menu">
+                                <li><a href="./postal_services.html">Poçt xidmətləri</a></li>
+                                <li><a href="./financial_services.html">Maliyyə xidmətləri</a></li>
+                                <li><a href="#">Rəqəmsal xidmətlər</a></li>
+                                <li><a href="./business_services.html">Biznes xidmətləri</a></li>
+                                <li><a href="./shipment_tracking.html">Göndərişlərin izlənməsi</a></li>
+                                <li><a href="./payments.html">Ödənişlər</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Bəyannamə</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                                <li><a href="./customs_eclaration.html">Gömrük bəyannaməsi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Tariflər</a>
+                            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                            <ul class="js-sub-menu sub-menu">
+                                <li><a href="./state_property.html">Poçt tarifləri</a></li>
+                                <li><a href="./municipal_lands.html">Maliyyə tarifləri</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Yeniliklər</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                                <li><a href="./announcements.html">Elanlar</a></li>
+                                <li><a href="./news.html">Xəbərlər</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                            <ul class="js-sub-menu sub-menu">
+                                <li><a href="./faq.html">Ümumi suallar</a></li>
+                                <li><a href="./faq.html">Beynəlxalq göndərişlər</a></li>
+                                <li><a href="./faq.html">Ölkədaxili göndərişlər</a></li>
+                                <li><a href="./faq.html">Maliyyə / Pul köçürmələri </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Əlaqə</a>
+                            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                                <li><a href="#">Əlaqə üçün</a></li>
+                                <li><a href="#">Kommunikasiya üzrə məsul şəxs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="Axtar...">
+                    </div>
+                </div>
+                <a href="" class="logo-right">
+                    <img src="./src/img/nmincom_logo.png" class="logo-right-img" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <a id="button"></a>
+        <section class="completed_projects">
+            <div class="container">
+
+                <div class="company-about">
+                    <h2 class="company-title">Xidmətlər / Maliyyə xidmətləri</h2>
+                    <p class="company-about-text">
+                        Azərbaycanda poçt rabitəsi Səfəvilərin hakimiyyəti dövründə (XVI əsr) inkişaf etməyə başlayıb.
+                        Müasir formada poçtun yaranması isə XIX əsrin 1-ci qərinəsinə təsadüf edir: 1818-ci ildə Gəncə
+                        şəhərində ilk poçt kontoru açılıb.
+                    </p>
+
+                </div>
+
+                <div class="shipment_number">
+                    <h4 class="static-title">
+                        Maliyyə xidmətləri indi daha rahat!
+                    </h4>
+                    <div class="row online-payment-row">
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                            <div class="online_payment_blog">
+                                <div class="online_payment_abs">
+                                    <img src="./src/img/payment1.svg" alt="">
+                                </div>
+                                <div class="online_payment_title">
+                                    Pul köçürmələri
+                                </div>
+                                <a href="./money_transfers.html" class="online_payment_more">
+                                    Ətraflı
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                            <div class="online_payment_blog">
+                                <div class="online_payment_abs">
+                                    <img src="./src/img/payment2.svg" alt="">
+                                </div>
+                                <div class="online_payment_title">
+                                    Onlayn ödəmələr
+                                </div>
+                                <a href="./payments.html" class="online_payment_more">
+                                    Ətraflı
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                            <div class="online_payment_blog">
+                                <div class="online_payment_abs">
+                                    <img src="./src/img/payment3.svg" alt="">
+                                </div>
+                                <div class="online_payment_title">
+                                    Tariflər
+                                </div>
+                                <a href="" class="online_payment_more">
+                                    <!-- burada pdf olacaq -->
+                                    Ətraflı
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="shipment_number">
+                    <h4 class="static-title">
+                        Maliyyə xidmətləri indi daha rahat!
+                    </h4>
+                    <div class="row online-payment-row2">
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="online_payment_blog online_payment_blog2">
+                                <div class="online_payment_abs">
+                                    <img src="./src/img/payment4.svg" alt="">
+                                </div>
+                                <div class="online_payment_title">
+                                    Mobil əlaqə
+                                </div>
+                                <a href="./payments.html" class="online_payment_more2">
+                                    Azercell, Bakcell, Nar Mobile və Naxtel 4G üzrə ödənişləri həyata keçirin.
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="online_payment_blog online_payment_blog2">
+                                <div class="online_payment_abs">
+                                    <img src="./src/img/payment5.svg" alt="">
+                                </div>
+                                <div class="online_payment_title">
+                                    Kommunal
+                                </div>
+                                <a href="./payments.html" class="online_payment_more2">
+                                    Elektrik, su və qaz, istilik sistemi və s. kimi kommunal xidmətlər üçün ödənişləri
+                                    buradan edin.
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="online_payment_blog online_payment_blog2">
+                                <div class="online_payment_abs">
+                                    <img src="./src/img/payment6.svg" alt="">
+                                </div>
+                                <div class="online_payment_title">
+                                    Kredit
+                                </div>
+                                <a href="./payments.html" class="online_payment_more2">
+                                    Kredit ödənişlərinizi vaxtında və problemsiz bir şəkildə tamamlayın.
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="online_payment_blog online_payment_blog2">
+                                <div class="online_payment_abs">
+                                    <img src="./src/img/payment7.svg" alt="">
+                                </div>
+                                <div class="online_payment_title">
+                                    İnternet
+                                </div>
+                                <a href="./payments.html" class="online_payment_more2">
+                                    İnternet provayder ödənişlərinizi sürətli və təhlükəsiz şəkildə həyata keçirin.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <section class="brands">
+                    <div class="container">
+                        <div class="brands-title-flex">
+                            <h3 class="brands-title">Markalar</h3>
+                            <a href="https://stamps.azerpost.az/en/products?ProductGroupID=10&page=12"
+                                class="order_stamp" target="_blank">
+                                Marka sifariş et
+                                <img src="./src/img/angels-right.svg" alt=" icon" class="order_stamp_icon">
+                            </a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div id="useful-links" class="owl-carousel">
+                                    <div class="useful-top">
+                                        <div class="useful-link-blog">
+                                            <a href="" class="useful-blog-abs"></a>
+                                            <div class="useful-blog">
+                                                <img src="./src/img/link1.png" alt="useful-logo" class="useful-logo">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="useful-link-blog">
+                                            <a href="" class="useful-blog-abs"></a>
+                                            <div class="useful-blog">
+                                                <img src="./src/img/link2.png" alt="useful-logo" class="useful-logo">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="useful-top">
+                                        <div class="useful-link-blog">
+                                            <a href="" class="useful-blog-abs"></a>
+                                            <div class="useful-blog">
+                                                <img src="./src/img/active_lots1.png" alt="useful-logo"
+                                                    class="useful-logo">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="useful-link-blog">
+                                            <a href="" class="useful-blog-abs"></a>
+                                            <div class="useful-blog">
+                                                <img src="./src/img/link5.png" alt="useful-logo" class="useful-logo">
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="useful-top">
+                                        <div class="useful-link-blog">
+                                            <a href="" class="useful-blog-abs"></a>
+                                            <div class="useful-blog">
+                                                <img src="./src/img/link1.png" alt="useful-logo" class="useful-logo">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="useful-link-blog">
+                                            <a href="" class="useful-blog-abs"></a>
+                                            <div class="useful-blog">
+                                                <img src="./src/img/link6.png" alt="useful-logo" class="useful-logo">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer-nav">
+        <div class="container">
+            <div class="footer-menu">
+                <div class="footer-column">
+                    <p class="footer-sub-menu">HAQQIMIZDA</p>
+                    <ul>
+                        <li><a href="./company.html">Şirkət</a></li>
+                        <li><a href="./human_resources.html">İnsan resursları</a></li>
+                        <li><a href="./international_relations.html">Beynəlxalq əlaqələr</a></li>
+                        <li><a href="./history_and_today.html">Tarix və bu gün</a></li>
+                        <li><a href="./completed_projects.html">İcra olunmuş layihələr</a></li>
+                        <li><a href="./privacy_policy.html">Məxfilik siyasəti</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-column">
+                    <p class="footer-sub-menu">XİDMƏTLƏR</p>
+                    <ul>
+                        <li><a href="./postal_services.html">Poçt xidmətləri</a></li>
+                        <li><a href="./financial_services.html">Maliyyə xidmətləri</a></li>
+                        <li><a href="./laws.html">Rəqəmsal xidmətlər</a></li>
+                        <li><a href="./business_services.html">Biznes xidmətləri</a></li>
+                        <li><a href="./shipment_tracking.html">Göndərişlərin izlənməsi</a></li>
+                        <li><a href="./payments.html">Ödənişlər</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <p class="footer-sub-menu">TARİFLƏR</p>
+                    <ul>
+                        <li><a href="./state_property.html">Poçt tarifləri</a></li>
+                        <li><a href="./municipal_lands.html">Maliyyə tarifləri</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            Copyright © <a href="https://nmincom.gov.az/" target="_blank" class="copyright-link">2025 Rəqəmsal İnkişaf
+                və Nəqliyyat Nazirliyi</a>
+        </div>
+
+        <ul class="footer-social-icons">
+            <li class="footer-social-li">
+                <a href="" class="footer-li-a"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li class="footer-social-li">
+                <a href="" class="footer-li-a"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="footer-social-li">
+                <a href="" class="footer-li-a"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./src/js/bootstrap.bundle.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.5.0/parallax.min.js"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./src/js/navbar.js"></script>
+
+    <script src="./src/js/statistics.js"></script>
+    <script src="./src/js/search.js"></script>
+    <script src="./src/js/calc.js"></script>
+    <script src="./src/js/completed_projects.js"></script>
+    <script src="./src/js/main.js"></script>
+
+
+</body>
+
+</html>

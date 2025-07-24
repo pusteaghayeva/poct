@@ -1,0 +1,10 @@
+.municipal_lands_auto {
+    margin: 0 auto;
+    max-width: 35%;
+}
+
+@media(max-width: 992px) {
+    .municipal_lands_auto {
+        max-width: 90%;
+    }
+}
