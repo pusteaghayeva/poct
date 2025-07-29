@@ -158,7 +158,7 @@
 .vacancy-icon {
     width: 64px;
     height: 64px;
-    background: url('/src/img/vacancy7.png') no-repeat center center;
+    background: url('../../img/vacancy7.png') no-repeat center center;
     background-size: contain;
     opacity: 0;
     transition: opacity 0.5s ease;
