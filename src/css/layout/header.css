@@ -15,7 +15,7 @@
   border-radius: 4px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 14%;
   transition: background-color .3s,
     opacity .5s, visibility .5s;
   opacity: 0;
@@ -30,7 +30,7 @@
   font-style: normal;
   font-size: 2em;
   line-height: 50px;
-  color: #fff;
+  color: var(--whiteColor);
 }
 
 #button:hover {
@@ -230,6 +230,16 @@ nav .navbar .links li:hover .js-sub-menu {
   border: none;
 }
 
+.btn-search {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(10%, -50%);
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
 .navbar .nav-links .sidebar-logo {
   display: none;
 }
@@ -337,7 +347,7 @@ nav .navbar .links li:hover .js-sub-menu {
 
   .sidebar-logo .logo-name {
     font-size: 25px;
-    color: #fff;
+    color: var(--whiteColor);
   }
 
   .sidebar-logo i,

@@ -3,7 +3,7 @@
 }
 
 .static-title {
-    font-family: Sarabun;
+    font-family: var(--fontSarabun);
     font-weight: 700;
     font-size: 64px;
     color: var(--aboutColor);

@@ -22,16 +22,6 @@
             navLinks.style.left = "-100%";
         }
 
-      
-
-//         let arrows = document.querySelectorAll(".arrow");
-
-// arrows.forEach(arrow => {
-//   arrow.addEventListener("click", (e) => {
-//     let arrowParent = e.target.closest("li");
-//     arrowParent.classList.toggle("showMenu");
-//   });
-// });
 
 
 let arrowParents = document.querySelectorAll(".links li");
@@ -42,13 +32,11 @@ arrowParents.forEach(li => {
     let submenu = li.querySelector(".sub-menu");
 
     if (submenu) {
-        // Ox iconuna klik
         arrow?.addEventListener("click", (e) => {
             e.preventDefault();
             li.classList.toggle("showMenu");
         });
 
-        // Menü adının özünə klik (mobil ekran üçün)
         link?.addEventListener("click", (e) => {
             if (window.innerWidth <= 800) {
                 e.preventDefault();

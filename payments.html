@@ -103,11 +103,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="search-box">
+                 <div class="search-box">
                     <i class='bx bx-search'></i>
-                    <div class="input-box">
-                        <input type="text" placeholder="Axtar...">
-                    </div>
+                    <form class="input-box" action="/search" method="GET">
+                        <input type="text" name="" placeholder="">
+                         <button class="btn  my-2 my-sm-0 btn-search" type="submit">Axtar...</button>
+                    </form>
                 </div>
                 <a href="" class="logo-right">
                     <img src="./src/img/nmincom_logo.png" class="logo-right-img" alt="">
@@ -129,14 +130,17 @@
 
                 <div class="payments_balance_increase">
                     <h5 class="balance_increase">Cüzdan balansının artırılması zamanı 0.5% keşbek qazanırsınız!</h5>
-                    <form type="button" class="banner__search banner__search_payments">
+                    <form type="button" class=" banner__search_payments">
                         <div class="form-group"><input type="text"
                                 placeholder="Ödəniş etmək istədiyiniz xidmətin adını daxil edin. Məsələn, Bakcell"
                                 class="form-control">
-                            <button type="submit" class="btn btn-blue btn-border"><span>Axtar</span></button>
+                            <button type="submit" class="btn btn-blue btn-border">
+                                <img src="./src/img/payment-search.svg" alt="Axtar" class="search-icon" />
+                            </button>
                         </div>
-
                     </form>
+
+
                 </div>
 
                 <div class="row payments-row">
@@ -303,7 +307,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./src/js/navbar.js"></script>
-
     <script src="./src/js/statistics.js"></script>
     <script src="./src/js/search.js"></script>
     <script src="./src/js/calc.js"></script>
