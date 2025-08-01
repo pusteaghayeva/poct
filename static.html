@@ -54,7 +54,6 @@
                             <ul class="js-sub-menu sub-menu">
                                 <li><a href="./postal_services.html">Poçt xidmətləri</a></li>
                                 <li><a href="./financial_services.html">Maliyyə xidmətləri</a></li>
-                                
                                 <li><a href="./business_services.html">Biznes xidmətləri</a></li>
                                 <li><a href="./shipment_tracking.html">Göndərişlərin izlənməsi</a></li>
                                 <li><a href="./payments.html">Ödənişlər</a></li>
@@ -119,33 +118,66 @@
 
     <main>
         <a id="button"></a>
-        <section class="company">
-            <div class="container">
-                <div class="company-about completed-projects-bg">
-                    <h2 class="company-title">Tariflər / Maliyyə tarifləri</h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="postal_convention_left municipal_lands_auto">
-                            <a href="" class="postal_convention_abs"></a>
-
-                            <p class="postal_convention_title">
-                                Daxili və beynəlxalq poçt göndərişləri üçün tariflər
-                            </p>
-                            <a href="" class="postal_convention_pdf">
-                                PDF
-                                <span class="postal_convention_icon"><i class="fa-solid fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
+        <div class="static">
+            <div class="container-fluid">
+                <div class="title-flex">
+                    <a href="https://nfsa.gov.az/az" class="title-first">
+                        Naxçıvanpoçt </a>
+                    <span>/</span>
+                    <a href="javascript:void(0)" class="title-first active">
+                        İnsan resursları
+                    </a>
+                    <span>/</span>
+                    <a href="javascript:void(0)" class="title-first active">
+                        Müştəri müraciətlərinin idarə edilməsi şöbəsinin aparıcı mütəxəssisi
+                    </a>
                 </div>
 
 
+                <div class="static-tile">
+                    Müştəri müraciətlərinin idarə edilməsi şöbəsinin aparıcı mütəxəssisi
+                </div>
+                <div class="static-text">
+                    Vəzifə öhdəlikləri:
+                    Müştəri şikayətlərini qəbul etmək və qeydiyyata almaq;
+                    Ticketing sistemində bütün məlumatları düzgün və dəqiq şəkildə qeydə almaq;
+                    Şikayətləri aidiyyəti strukturlara yönləndirmək və nəticəsini izləmək;
+                    Müştərilərə vaxtında, etik və aydın cavablar təqdim etmək;
+                    Şikayətləri kateqoriyalaşdırmaq və təhlil etmək;
+                    Şikayətlərin əsas səbəblərini müəyyən edərək rəhbərliyə hesabatlar təqdim etmək;
+                    Müştəri məmnuniyyətini artırmaq üçün operativ və effektiv yanaşma göstərmək;
+                    Aidiyyəti şöbələrlə sıx əməkdaşlıq edərək şikayətlərin həllinə dəstək olmaq;
+                    Periodik olaraq statistik təhlillər və şikayət trendləri üzrə hesabatlar təqdim etmək;
+                    Şirkətin xidmət keyfiyyəti standartlarına uyğun fəaliyyət göstərmək;
 
+
+                    Tələblər:
+                    Ali təhsil;
+                    Şikayətlərin idarə olunması, ticketing sistemləri sahəsində azı 1-2 il iş təcrübəsi (şikayətlərin
+                    analizi və cavablandırılması üzrə təcrübəyə üstünlük verilir);
+                    CRM sistemləri və ya helpdesk/ticketing sistemləri ilə iş təcrübəsi;
+                    Microsoft Office proqramlarını (Word, Excel, Outlook) yaxşı səviyyədə bilmək;
+                    Azərbaycan və rus dillərində səlis danışıq və yazı qabiliyyəti (İngilis dilini bilmək üstünlükdür);
+                    Yüksək ünsiyyət bacarığı;
+                     Analitik düşüncə;
+                    Sürətli öyrənmə və dəyişikliklərə uyğunlaşma
+                    Diqqətli və sistemli işləmə bacarığı
+                    Müştəri yönümlü düşüncə və problemlərin həllində çeviklik;
+                    Vakansiya haqqında:
+                    İş yeri: Bakı şəhəri, Droqal döngəsi, 702-ci məhəllə;
+                    Tam ştat (Bazar ertəsi-Cümə günləri);
+                    Korporativ nömrə ilə təmin olunma;
+                    Əmək haqqı razılaşma ilə.
+                    Müvafiq tələblərə uyğun olan namizədlər mövzu hissəsində  “Müştəri müraciətlərinin idarə edilməsi
+                    şöbəsinin aparıcı mütəxəssisi” qeyd etməklə CV-lərini career@azerpost.az ünvanına göndərə bilərlər. 
+                </div>
+
+                <div class="end-date">
+                    
+                </div>
             </div>
-        </section>
 
+        </div>
 
     </main>
 
@@ -224,21 +256,3 @@
 </body>
 
 </html>
-
-
-
-@extends('layouts.master')
-@section('title', $page->title)
-
-@section('content')
-<section class="dinamic">
-    <div class="container">
-        <h2 class="dinamic_title">
-            {{$page->title}}
-        </h2>
-        <div class="dinamic_content">
-            {!! $page->body !!}
-        </div>
-    </div>
-</section>
-@endsection

@@ -11,6 +11,416 @@ body {
     margin-top: 60px;
 }
 
+/* pop up */
+.popup {
+    display: none;
+    position: fixed;
+    /* digər stil... */
+}
+
+.popup.active {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    /* digər stil... */
+}
+
+.overlay.active {
+    display: block;
+}
+
+
+header.popup-header {
+    z-index: 99;
+    position: relative;
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-container {
+    max-width: 1220px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+.header-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-column a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.header-column .open-popup--btn {
+    width: 100%;
+    background-color: #fff;
+    color: #282725;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 32px 20px;
+    border-radius: 4px;
+    font-family: "Bebas Neue", sans-serif;
+    display: block;
+    column-gap: 10px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.header-column .open-popup--btn:hover {
+    -webkit-box-shadow: 0 8px 30px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, .15);
+}
+
+/* ======== Newsletter Popup ========= */
+section.popup-section {
+    background-size: cover !important;
+    overflow: hidden;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+section.popup-section.hide-popup {
+    animation: fadeOut 1s ease-out forwards;
+}
+
+.hide-popup {
+    display: none !important;
+}
+
+/* Define the fade-out keyframes */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+section.popup-section:before {
+    content: '';
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: .8;
+    /* background: #383632; */
+    -webkit-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+    height: 100%;
+    top: 0;
+}
+
+section.popup-section .inner-container {
+    max-width: 100%;
+    /* padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; */
+    height: 100%;
+}
+
+section.popup-section .inner-container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+@keyframes slideUpAttention {
+    0% {
+        opacity: 0;
+        transform: translateY(200px) scale(0.95);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.02);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.popup-inner {
+    z-index: 9;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    animation: slideUpAttention 0.8s ease-out;
+    padding: 40px;
+    background-image: url('../../img/popup_bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popup-inner--row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.popup-inner-column {
+    flex: 0 0 auto;
+    width: 50%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat !important;
+    overflow: hidden;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-style: Italic;
+    font-size: 48px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--whiteColor);
+    text-align: center;
+}
+
+form.popup-form {
+    padding: 15% 8%;
+}
+
+
+
+.popup-more {
+    width: 50%;
+    background: linear-gradient(254.49deg, #FFC700 39.14%, #FFE600 75.87%);
+    color: var(--blackColor);
+    /* text-decoration: none; */
+    font-weight: 700;
+    font-style: Italic;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 11px 16px;
+    border-radius: 109px;
+    display: block;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    margin-left: 12%;
+}
+
+.popup-more .fa-arrow-up {
+    transform: rotate(45deg);
+    margin-left: 6px;
+}
+
+.form-fields .submit-btn:hover {
+    -webkit-box-shadow: 0 8px 30px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 8px 30px 0 rgba(0, 0, 0, .15);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+}
+
+span.close-popup--btn {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ======== Sticky Footer ========= */
+.sticky-footer {
+    position: fixed;
+    width: 100%;
+    background: #333;
+    z-index: 99;
+    bottom: 0;
+}
+
+.sticky-footer .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    padding-right: 15px;
+}
+
+.creditd a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.social ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.social ul li a {
+    display: flex;
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social ul li a img {
+    max-width: 20px;
+}
+
+/* RESPONSIVE IPAD  */
+@media only screen and (max-width: 981px) {
+    .popup-inner-column {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .bg-cover {
+        height: auto;
+        font-size: 34px;
+    }
+
+    .popup-more {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    form.popup-form {
+        padding: 8% 5%;
+    }
+
+    span.close-popup--btn {
+        right: 10px;
+        top: 10px;
+    }
+}
+
+#popup {}
+
+/* RESPONSIVE Iphone */
+@media only screen and (max-width: 480px) {
+    .popup-inner {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .bg-cover {
+        height: auto;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    /* .form-header h2.form-heading {
+        font-size: 2.438rem;
+        line-height: 2.4rem;
+    }
+
+    .header-column a {
+        font-size: 20px;
+    } */
+
+    .popup-more {
+        width: 100%;
+        margin-left: 0;
+        font-size: 16px;
+        width: 70%;
+        margin: 0 auto
+    }
+}
+
+/* ====================== Buy Me A Coffee =============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.coffee-button {
+    position: fixed;
+    z-index: 999;
+    top: 20px;
+    right: 20px;
+    background-color: #FFC107;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.coffee-button:hover {
+    background-color: #FFD54F;
+}
+
+.coffee-icon {
+    font-size: 24px;
+    line-height: 1;
+}
+
+/* pop up elave */
+
+/* pop up */
 dl,
 ol,
 ul {
@@ -1011,8 +1421,8 @@ a {
     }
 
     .postal-services-pos-abs {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         left: 43%;
     }
 
@@ -1132,7 +1542,7 @@ a {
     }
 
     .postal-services-blog {
-        width: 300px;
+        width: 290px;
         height: 200px;
         margin: 20px auto;
     }
@@ -1387,14 +1797,15 @@ a {
 
 
 /* Pagination */
-.pagination-nav{
+.pagination-nav {
     position: relative;
 }
+
 .pagination-flex {
     margin: 50px 0 40px;
 }
 
-.pagination{
+.pagination {
     position: absolute;
     top: 50%;
     left: 50%;

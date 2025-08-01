@@ -54,7 +54,6 @@
                             <ul class="js-sub-menu sub-menu">
                                 <li><a href="./postal_services.html">Poçt xidmətləri</a></li>
                                 <li><a href="./financial_services.html">Maliyyə xidmətləri</a></li>
-                                <li><a href="#">Rəqəmsal xidmətlər</a></li>
                                 <li><a href="./business_services.html">Biznes xidmətləri</a></li>
                                 <li><a href="./shipment_tracking.html">Göndərişlərin izlənməsi</a></li>
                                 <li><a href="./payments.html">Ödənişlər</a></li>
@@ -97,8 +96,7 @@
                             <a href="#">Əlaqə</a>
                             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
                             <ul class="htmlCss-sub-menu sub-menu">
-                                <li><a href="#">Əlaqə üçün</a></li>
-                                <li><a href="#">Kommunikasiya üzrə məsul şəxs</a></li>
+                                <li><a href="./for_contact.html">Əlaqə üçün</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -139,7 +137,7 @@
                         Maliyyə xidmətləri indi daha rahat!
                     </h4>
                     <div class="row online-payment-row">
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                             <div class="online_payment_blog">
                                 <div class="online_payment_abs">
                                     <img src="./src/img/payment1.svg" alt="">
@@ -152,7 +150,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                             <div class="online_payment_blog">
                                 <div class="online_payment_abs">
                                     <img src="./src/img/payment2.svg" alt="">
@@ -165,7 +163,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                             <div class="online_payment_blog">
                                 <div class="online_payment_abs">
                                     <img src="./src/img/payment3.svg" alt="">
@@ -181,6 +179,79 @@
                         </div>
                     </div>
 
+                </div>
+
+
+
+                <div id="financeCalculator" class="financial-calculator">
+                    <div class="container-fluid">
+                        <h4 class="static-title">
+                            Maliyyə kalkulyatoru
+                        </h4>
+                        <div data-tab="2" class="calculator-tabs-item card-order__tab__item">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="financial-calculator__form">
+                                        <form action="" data-gtm-form-interact-id="0">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group"><select name="type" id="type"
+                                                            class="form-control" data-gtm-form-interact-field-id="0">
+
+                                                            <option value="">Pulköçürmə sistemini
+                                                                seçin</option>
+                                                            <option value="241">Zolotaya Korona</option>
+                                                            <option value="242">Western Union</option>
+                                                            <option value="394">Contact</option>
+                                                        </select></div>
+
+
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"><select name="country" id="country"
+                                                            class="form-control">
+                                                            <option value="">Ölkəni seçin</option>
+                                                            <option value="243">Rusiya</option>
+                                                            <option value="244">Türkiyə</option>
+                                                            <option value="245">Niderland</option>
+                                                        </select></div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"><input type="text"
+                                                            placeholder="Məbləği qeyd edin" class="form-control"></div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button type="submit" class="btn  w-100 calculator-btn">
+                                                        <!-- <span> -->
+                                                        <span data-name="Hesabla">
+                                                            <span class="btn-text">Hesabla</span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="calculator__result">
+                                        <div class="calculator__result__text">
+                                            <p>Ümumi məbləğ:</p>
+                                            <h2>~ 0.00 AZN</h2>
+                                            <div class="calculator-note">
+                                                <img src="./src/img/attention.svg" alt="attention">
+                                                <p class="calculator-note-text">Köçürmə tarifləri pul köçürmə
+                                                    sistemləri tərəfindən <br> müəyyən edilir və mütəmadi dəyişdirilə
+                                                    bilər
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -211,7 +282,8 @@
                                     Kommunal
                                 </div>
                                 <a href="./payments.html" class="online_payment_more2">
-                                    Elektrik, su və qaz, istilik sistemi və s. kimi kommunal xidmətlər üçün ödənişləri
+                                    Elektrik, su və qaz, istilik sistemi və s. kimi kommunal xidmətlər üçün
+                                    ödənişləri
                                     buradan edin.
                                 </a>
                             </div>
@@ -246,83 +318,266 @@
                     </div>
 
                 </div>
-                <section class="brands">
-                    <div class="container">
-                        <div class="brands-title-flex">
-                            <h3 class="brands-title">Markalar</h3>
-                            <a href="https://stamps.azerpost.az/en/products?ProductGroupID=10&page=12"
-                                class="order_stamp" target="_blank">
-                                Marka sifariş et
-                                <img src="./src/img/angels-right.svg" alt=" icon" class="order_stamp_icon">
-                            </a>
+
+
+                <div class="exchange_transactions">
+                    <h4 class="static-title">
+                        Mübadilə əməliyyatları
+                    </h4>
+                    <div class="exchange-box">
+                        <div class="currency">
+                            <select id="from-currency">
+                                <option value="AZN">AZN</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="TRY">TRY</option>
+                            </select>
+                            <input id="from-amount" type="number" value="1" min="0" />
                         </div>
 
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div id="useful-links" class="owl-carousel">
-                                    <div class="useful-top">
-                                        <div class="useful-link-blog">
-                                            <a href="" class="useful-blog-abs"></a>
-                                            <div class="useful-blog">
-                                                <img src="./src/img/link1.png" alt="useful-logo" class="useful-logo">
+                        <div class="switch-btn" onclick="swapCurrencies()">
+                            <img src="/src/img/change.svg" alt="test">
+                        </div>
+
+                        <div class="currency">
+                            <select id="to-currency">
+                                <option value="USD">USD</option>
+                                <option value="AZN">AZN</option>
+                                <option value="EUR">EUR</option>
+                                <option value="TRY">TRY</option>
+                            </select>
+                            <!-- <input id="to-amount" type="text" readonly /> -->
+                            <input id="to-amount" type="number" value="1" />
+
+                        </div>
+
+                        <button id="convert-btn">Çevir</button>
+                    </div>
+        </section>
+
+
+
+
+
+        <section class="brands">
+            <div class="container">
+                <div class="brands-title-flex">
+                    <h3 class="brands-title">Markalar</h3>
+                    <a href="https://stamps.azerpost.az/en/products?ProductGroupID=10&amp;page=12" class="order_stamp"
+                        target="_blank">
+                        Marka sifariş et
+                        <img src="./src/img/angels-right.svg" alt=" icon" class="order_stamp_icon">
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div id="useful-links" class="owl-carousel owl-loaded owl-drag">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage"
+                                    style="transform: translate3d(-1305px, 0px, 0px); transition: 0.25s; width: 3918px;">
+                                    <div class="owl-item cloned" style="width: 425.333px; margin-right: 10px;">
+                                        <div class="useful-top">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link1.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
                                             </div>
-                                        </div>
 
 
-                                        <div class="useful-link-blog">
-                                            <a href="" class="useful-blog-abs"></a>
-                                            <div class="useful-blog">
-                                                <img src="./src/img/link2.png" alt="useful-logo" class="useful-logo">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link2.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="useful-top">
-                                        <div class="useful-link-blog">
-                                            <a href="" class="useful-blog-abs"></a>
-                                            <div class="useful-blog">
-                                                <img src="./src/img/active_lots1.png" alt="useful-logo"
-                                                    class="useful-logo">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="useful-link-blog">
-                                            <a href="" class="useful-blog-abs"></a>
-                                            <div class="useful-blog">
-                                                <img src="./src/img/link5.png" alt="useful-logo" class="useful-logo">
+                                    <div class="owl-item cloned" style="width: 425.333px; margin-right: 10px;">
+                                        <div class="useful-top">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/active_lots1.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
                                             </div>
 
 
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link5.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+
+
+                                            </div>
                                         </div>
                                     </div>
-
-                                    <div class="useful-top">
-                                        <div class="useful-link-blog">
-                                            <a href="" class="useful-blog-abs"></a>
-                                            <div class="useful-blog">
-                                                <img src="./src/img/link1.png" alt="useful-logo" class="useful-logo">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="useful-link-blog">
-                                            <a href="" class="useful-blog-abs"></a>
-                                            <div class="useful-blog">
-                                                <img src="./src/img/link6.png" alt="useful-logo" class="useful-logo">
+                                    <div class="owl-item cloned" style="width: 425.333px; margin-right: 10px;">
+                                        <div class="useful-top">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link1.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
                                             </div>
 
+
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link6.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="owl-item active" style="width: 425.333px; margin-right: 10px;">
+                                        <div class="useful-top">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link1.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+                                            </div>
 
 
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link2.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item active" style="width: 425.333px; margin-right: 10px;">
+                                        <div class="useful-top">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/active_lots1.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link5.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item active" style="width: 425.333px; margin-right: 10px;">
+                                        <div class="useful-top">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link1.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link6.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 425.333px; margin-right: 10px;">
+                                        <div class="useful-top">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link1.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link2.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 425.333px; margin-right: 10px;">
+                                        <div class="useful-top">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/active_lots1.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link5.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item cloned" style="width: 425.333px; margin-right: 10px;">
+                                        <div class="useful-top">
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link1.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="useful-link-blog">
+                                                <a href="" class="useful-blog-abs"></a>
+                                                <div class="useful-blog">
+                                                    <img src="./src/img/link6.png" alt="useful-logo"
+                                                        class="useful-logo">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="owl-nav disabled"><button type="button" role="presentation"
+                                    class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button"
+                                    role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
+                            <div class="owl-dots disabled"><button role="button"
+                                    class="owl-dot active"><span></span></button></div>
                         </div>
                     </div>
-                </section>
-
+                </div>
+            </div>
         </section>
+        <!-- </section> -->
 
 
     </main>
@@ -348,7 +603,6 @@
                     <ul>
                         <li><a href="./postal_services.html">Poçt xidmətləri</a></li>
                         <li><a href="./financial_services.html">Maliyyə xidmətləri</a></li>
-                        <li><a href="./laws.html">Rəqəmsal xidmətlər</a></li>
                         <li><a href="./business_services.html">Biznes xidmətləri</a></li>
                         <li><a href="./shipment_tracking.html">Göndərişlərin izlənməsi</a></li>
                         <li><a href="./payments.html">Ödənişlər</a></li>
@@ -398,6 +652,7 @@
     <script src="./src/js/search.js"></script>
     <script src="./src/js/calc.js"></script>
     <script src="./src/js/completed_projects.js"></script>
+    <script src="./src/js/change.js"></script>
     <script src="./src/js/main.js"></script>
 
 

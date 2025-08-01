@@ -23,5 +23,7 @@
     --customsDefaultBg: rgba(217, 217, 217, 0.5);
     --newsDateColor: rgba(114, 114, 114, 1);
     --customBg: #D9D9D9;
-    --logoColor:#032F52;
+    --logoColor: #032F52;
+    --placeholderColor: #757D8A;
+
 }
