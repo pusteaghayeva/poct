@@ -63,6 +63,16 @@
     opacity: 1;
 }
 
+.announcement-flex {
+    display: none;
+}
+
+.announcement-flex.visible {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 @media(max-width:992px) {
     .announcement-flex {
         display: block;

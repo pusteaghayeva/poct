@@ -54,7 +54,7 @@
                             <ul class="js-sub-menu sub-menu">
                                 <li><a href="./postal_services.html">Poçt xidmətləri</a></li>
                                 <li><a href="./financial_services.html">Maliyyə xidmətləri</a></li>
-                                
+
                                 <li><a href="./business_services.html">Biznes xidmətləri</a></li>
                                 <li><a href="./shipment_tracking.html">Göndərişlərin izlənməsi</a></li>
                                 <li><a href="./payments.html">Ödənişlər</a></li>
@@ -224,21 +224,3 @@
 </body>
 
 </html>
-
-
-
-@extends('layouts.master')
-@section('title', $page->title)
-
-@section('content')
-<section class="dinamic">
-    <div class="container">
-        <h2 class="dinamic_title">
-            {{$page->title}}
-        </h2>
-        <div class="dinamic_content">
-            {!! $page->body !!}
-        </div>
-    </div>
-</section>
-@endsection

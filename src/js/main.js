@@ -1,23 +1,3 @@
-// pop up
-let popup = document.getElementById("popup");
-let closeBtn = document.querySelector(".close-popup--btn");
-
-let hasShownPopup = false;
-
-window.addEventListener("scroll", function () {
-  if (!hasShownPopup && window.scrollY > 100) {
-    popup.classList.remove("hide-popup");
-    hasShownPopup = true;
-  }
-});
-
-closeBtn.addEventListener("click", function () {
-  popup.classList.add("hide-popup");
-});
-
-// pop up end
-
-
 $(document).ready(function () {
   $("#useful-links").owlCarousel({
     loop: true,
@@ -180,11 +160,11 @@ document.addEventListener("DOMContentLoaded", function () {
     updateVisibility();
   }
 
-  // Əvvəlki çağırışlar...
   setupToggle('.vacancy-blog', '.vacancy-flex', 'toggleVacancies', 2, 5);
   setupToggle('.faqs .container', '.faq-drawer', 'toggleFaqs', 3, 3);
+  setupToggle('.announcement-blog', '.announcement-flex', 'toggleAnnouncements', 3, 5);
 
-  // Maliyyə hesabatları üçün yeni çağırış
+
   setupToggle('.financial_statements .row', '.postal_convention_left', 'toggleFinancialStatements', 4, 3);
 });
 

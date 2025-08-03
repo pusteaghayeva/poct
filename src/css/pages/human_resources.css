@@ -198,7 +198,7 @@
 }
 
 .vacancy-more:hover {
-    color: white;
+    color: var(--whiteColor);
     background-color: var(--aboutColor);
 }
 
@@ -219,11 +219,13 @@
 .vacancy-flex:hover .vacancy-icon {
     opacity: 1;
 }
+
 .vacancy-flex {
     display: none;
 }
+
 .vacancy-flex.visible {
-  display: flex;
+    display: flex;
 }
 
 

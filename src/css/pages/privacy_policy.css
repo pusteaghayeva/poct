@@ -2,17 +2,26 @@
     line-height: normal;
 }
 
-.static-title {
-    font-family: Sarabun;
+.privacy_policy_title {
     font-weight: 700;
     font-size: 64px;
     color: var(--aboutColor);
     text-align: center;
 }
 
-.static-content {
+.privacy_policy_content {
     font-family: var(--fontSarabun);
     font-weight: 400;
     font-size: 36px;
 
+}
+
+@media(max-width: 768px) {
+    .privacy_policy_title {
+        font-size: 40px;
+    }
+
+    .privacy_policy_content {
+        font-size: 24px;
+    }
 }

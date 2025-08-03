@@ -25,6 +25,7 @@
 @import url('./pages/payments.css');
 @import url('./pages/faq.css');
 @import url('./pages/news.css');
+@import url('./pages/single_news.css');
 @import url('./pages/announcements.css');
 @import url('./pages/financial_tariffs.css');
 @import url('./pages/state_property.css');
@@ -32,3 +33,5 @@
 @import url('./pages/customs_eclaration.css');
 @import url('./pages/for_contact.css');
 @import url('./pages/static.css');
+@import url('./pages/apply.css');
+@import url('./pages/management.css');
