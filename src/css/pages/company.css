@@ -148,6 +148,7 @@
     filter: blur(1px);
 }
 
+/* management */
 .management {
     margin: 72px 0;
 }
@@ -162,6 +163,7 @@
     margin-bottom: 72px;
 }
 
+/* carousel */
 .management .owl-carousel .owl-stage {
     display: flex;
 }
@@ -569,6 +571,6 @@
 }
 
 .financial_statements .postal_convention_left.visible {
-    display: flex; 
+    display: flex; /* Və ya sənin hazırkı dizayna uyğun */
     flex-direction: column;
 }

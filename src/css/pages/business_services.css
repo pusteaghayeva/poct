@@ -28,6 +28,7 @@
     object-fit: cover;
 }
 
+.application_services_right {}
 
 .application_services_content {
     font-weight: 400;
@@ -40,7 +41,7 @@
     font-size: 38px;
     text-align: center;
     color: var(--postalServicesBorder);
-    border: 1px solid var(--postalServicesBorder);
+    border: 1px solid rgba(237, 94, 59, 1);
     width: 100%;
     text-align: center;
     display: block;
@@ -77,14 +78,16 @@
     overflow: hidden;
     transition: all 0.4s ease-in-out;
     border-radius: 20px;
-    background: var(--whiteColor);
+    background: #fff;
 }
 
+/* Overlay */
 .application_services_card::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(237, 94, 59, 0.05);
+    /* narıncımsı overlay */
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     z-index: 1;
@@ -94,10 +97,14 @@
     opacity: 1;
 }
 
+/* Şəklin rotate effekti */
+.application_services_img {}
+
 .application_services_card:hover .application_services_img {
     transform: scale(1.03) rotate(1.5deg);
 }
 
+/* Content yüngül animate */
 .application_services_content {
     position: relative;
     z-index: 2;
@@ -111,6 +118,7 @@
     opacity: 1;
 }
 
+/* Buton içində ox animasiyası */
 .application_services_apply {
     position: relative;
     z-index: 2;
@@ -131,7 +139,7 @@
 
 .application_services_card:hover .application_services_apply {
     padding-right: 40px;
-    color: var(--whiteColor);
+    color: #fff;
     background-color: var(--postalServicesBorder);
     border-color: var(--postalServicesBorder);
 }
@@ -156,6 +164,12 @@
 
 }
 
+
+/* @media (max-width: 1200px) {
+    .application_services_flex {
+        gap: 5px;
+    }
+} */
 @media (max-width: 1200px) and (min-width: 992px) {
     .application_services_img {
         width: 45%;

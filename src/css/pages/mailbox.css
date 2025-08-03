@@ -17,6 +17,14 @@
 }
 
 .read_other_posts {
+    /* background-color: red; */
+}
+
+
+
+
+/* read_other_posts */
+.read_other_posts {
     margin: 72px 0;
 }
 
@@ -25,8 +33,12 @@
     font-weight: 600;
     font-size: 32px;
     color: var(--aboutColor);
+    /* margin: 24px 0; */
     margin: 25px;
+
 }
+
+/* carousel */
 .read_other_posts .owl-carousel .owl-stage {
     display: flex;
 }
@@ -53,6 +65,8 @@
     height: 200px;
     object-fit: cover;
 }
+
+
 
 .read_other_posts-name {
     margin: 15px 0;
@@ -174,3 +188,8 @@
         font-size: 28px;
     }
 }
+
+/* .thumbnail:hover .read_other_posts-img {
+    filter: grayscale(100%);
+    Basqa yerde istifade et
+} */

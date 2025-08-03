@@ -4,10 +4,7 @@
     const toAmount = document.getElementById('to-amount');
     const convertBtn = document.getElementById('convert-btn');
 
-<<<<<<< HEAD
     // Pulsuz API-dən istifadə (dəyişə də bilərik istəsən)
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
     convertBtn.addEventListener('click', () => {
       const from = fromCurrency.value;
       const to = toCurrency.value;

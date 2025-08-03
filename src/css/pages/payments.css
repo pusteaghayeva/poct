@@ -98,15 +98,7 @@
     font-size: 24px;
 }
 
-<<<<<<< HEAD
 
-=======
-.banner__search_payments .btn{
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 @media (max-width: 1400px) and (min-width: 992px) {
     .payments-rel {
         margin: 15px;

@@ -5,6 +5,7 @@
 }
 
 .us_different_main_title {
+    /* font-family: var(--fontSarabun); */
     font-weight: 600;
     font-size: 64px;
     text-align: center;
@@ -12,6 +13,7 @@
 }
 
 .us_different_title {
+    /* font-family: var(--fontSarabun); */
     font-weight: 700;
     font-size: 32px;
     letter-spacing: -0.5px;
@@ -52,6 +54,51 @@
     pointer-events: none;
 }
 
+
+/* 
+.us_different_col:hover {
+    background-color: #fff8e1;
+    border-radius: 3px;
+}
+
+.us_different:hover .us_different_icon {
+    left: 30px;
+    opacity: 0.3;
+    filter: blur(1px);
+} */
+
+/* .us_different_col:hover {
+    background-color: var(--activeColor);
+    border-radius: 5px;
+}
+
+.us_different_col:hover .us_different_icon {
+    left: 30px;
+    opacity: 0.3;
+    filter: blur(1px);
+    color: white;
+} */
+
+/* .us_different_col:hover .us_different_title {
+    color: var(--whiteColor);
+} */
+
+/* 
+.us_different_col:hover {
+    background-color: var(--activeColor);
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.us_different_col:hover .us_different_title {
+    background: linear-gradient(90deg, #FDB235, #FF5E41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.5s ease;
+} */
+
 .us_different_col:hover {
     background-color: var(--activeColor);
     border-radius: 5px;
@@ -67,6 +114,7 @@
     color: white;
     transform: rotate(10deg) scale(1.15);
     animation: glow 1.5s infinite alternate;
+    color: red;
 }
 
 .us_different_col:hover .us_different_title {
@@ -84,6 +132,9 @@
         text-shadow: 0 0 20px #fff, 0 0 40px #FDB235, 0 0 60px #FF5E41;
     }
 }
+
+/* Vakansiya */
+
 
 .vacancy-flex {
     display: flex;
@@ -158,7 +209,7 @@
 .vacancy-icon {
     width: 64px;
     height: 64px;
-    background: url('../../img/vacancy7.png') no-repeat center center;
+    background: url('/src/img/vacancy7.png') no-repeat center center;
     background-size: contain;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -184,6 +235,11 @@
 
 }
 
+/* career-path */
+.career-path {}
+
+
+/* carousel */
 .career-path .owl-carousel .owl-stage {
     display: flex;
 }
@@ -209,6 +265,7 @@
     width: 352px;
     height: 219px;
     object-fit: cover;
+    /* border-top-left-radius: 30px; */
     border-top-right-radius: 30px;
 }
 
@@ -263,7 +320,9 @@
     text-decoration: none;
     display: inline-block;
     padding-bottom: 3px;
+    /* xətt üçün yer */
     max-width: max-content;
+    /* sözün eni qədər genişlik */
     margin: 17px 0;
 }
 
@@ -280,6 +339,7 @@
 
 .caption-more:hover::after {
     width: 100%;
+    /* sözün tam eni qədər xətt */
 }
 
 
@@ -349,6 +409,8 @@
     .us_different_text {
         font-size: 24px;
     }
+
+
 }
 
 .vacancy-flex {

@@ -11,17 +11,11 @@ body {
     margin-top: 60px;
 }
 
-<<<<<<< HEAD
 /* pop up */
 .popup {
     display: none;
     position: fixed;
     /* digər stil... */
-=======
-.popup {
-    display: none;
-    position: fixed;
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 }
 
 .popup.active {
@@ -30,10 +24,7 @@ body {
 
 .overlay {
     display: none;
-<<<<<<< HEAD
     /* digər stil... */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 }
 
 .overlay.active {
@@ -67,11 +58,7 @@ header.popup-header {
 
 .header-column a {
     text-decoration: none;
-<<<<<<< HEAD
     color: #fff;
-=======
-    color: var(--whiteColor);
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
     font-size: 24px;
     font-weight: bold;
     line-height: normal;
@@ -79,11 +66,7 @@ header.popup-header {
 
 .header-column .open-popup--btn {
     width: 100%;
-<<<<<<< HEAD
     background-color: #fff;
-=======
-    background-color: var(--whiteColor);
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
     color: #282725;
     text-decoration: none;
     font-size: 18px;
@@ -105,10 +88,7 @@ header.popup-header {
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, .15);
 }
 
-<<<<<<< HEAD
 /* ======== Newsletter Popup ========= */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 section.popup-section {
     background-size: cover !important;
     overflow: hidden;
@@ -120,11 +100,7 @@ section.popup-section {
     width: 100%;
     position: fixed;
     bottom: 0;
-<<<<<<< HEAD
     z-index: 99;
-=======
-    z-index: 19;
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 }
 
 @keyframes fadeIn {
@@ -145,10 +121,7 @@ section.popup-section.hide-popup {
     display: none !important;
 }
 
-<<<<<<< HEAD
 /* Define the fade-out keyframes */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -168,10 +141,7 @@ section.popup-section:before {
     width: 100%;
     z-index: 1;
     opacity: .8;
-<<<<<<< HEAD
     /* background: #383632; */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
     -webkit-transition: opacity .3s ease-out;
     transition: opacity .3s ease-out;
     height: 100%;
@@ -180,13 +150,10 @@ section.popup-section:before {
 
 section.popup-section .inner-container {
     max-width: 100%;
-<<<<<<< HEAD
     /* padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto; */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
     height: 100%;
 }
 
@@ -194,10 +161,7 @@ section.popup-section .inner-container .row {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     /* width: 100%; */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
     flex-wrap: wrap;
     height: 100%;
 }
@@ -243,10 +207,7 @@ section.popup-section .inner-container .row {
     flex: 0 0 auto;
     width: 50%;
     position: relative;
-<<<<<<< HEAD
     /* overflow: hidden; */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 }
 
 .bg-cover {
@@ -255,10 +216,7 @@ section.popup-section .inner-container .row {
     position: relative;
     background-repeat: no-repeat !important;
     overflow: hidden;
-<<<<<<< HEAD
     font-family: DM Sans;
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
     font-weight: 400;
     font-style: Italic;
     font-size: 48px;
@@ -280,10 +238,7 @@ form.popup-form {
     width: 50%;
     background: linear-gradient(254.49deg, #FFC700 39.14%, #FFE600 75.87%);
     color: var(--blackColor);
-<<<<<<< HEAD
     /* text-decoration: none; */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
     font-weight: 700;
     font-style: Italic;
     font-size: 24px;
@@ -323,7 +278,6 @@ span.close-popup--btn {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 /* ======== Sticky Footer ========= */
 .sticky-footer {
     position: fixed;
@@ -372,8 +326,6 @@ span.close-popup--btn {
 }
 
 /* RESPONSIVE IPAD  */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 @media only screen and (max-width: 981px) {
     .popup-inner-column {
         flex: 0 0 auto;
@@ -400,13 +352,9 @@ span.close-popup--btn {
     }
 }
 
-<<<<<<< HEAD
 #popup {}
 
 /* RESPONSIVE Iphone */
-=======
-
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 @media only screen and (max-width: 480px) {
     .popup-inner {
         max-width: 100%;
@@ -419,7 +367,6 @@ span.close-popup--btn {
         font-size: 20px;
     }
 
-<<<<<<< HEAD
     /* .form-header h2.form-heading {
         font-size: 2.438rem;
         line-height: 2.4rem;
@@ -428,8 +375,6 @@ span.close-popup--btn {
     .header-column a {
         font-size: 20px;
     } */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 
     .popup-more {
         width: 100%;
@@ -440,7 +385,6 @@ span.close-popup--btn {
     }
 }
 
-<<<<<<< HEAD
 /* ====================== Buy Me A Coffee =============================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
@@ -477,8 +421,6 @@ span.close-popup--btn {
 /* pop up elave */
 
 /* pop up */
-=======
->>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 dl,
 ol,
 ul {
@@ -539,6 +481,7 @@ a {
     inset: 0;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 2;
+
 }
 
 
@@ -1134,7 +1077,7 @@ a {
     position: absolute;
     top: 50%;
     background-color: var(--blackColor);
-    color: var(--whiteColor);
+    color: #fff;
     margin: 0;
     transition: all 0.3s ease-in-out;
 }
@@ -1363,7 +1306,7 @@ a {
     opacity: 0;
     width: max-content;
     background-color: #333;
-    color: var(--whiteColor);
+    color: #fff;
     text-align: center;
     border-radius: 4px;
     padding: 4px 8px;
@@ -1871,7 +1814,7 @@ a {
 
 .pagination .page-link {
     color: var(--logoColor) !important;
-    background-color: var(--whiteColor) !important;
+    background-color: #fff !important;
     width: 33px !important;
     border-color: var(--logoColor) !important;
 }
@@ -1879,5 +1822,5 @@ a {
 .pagination .active span {
     background-color: var(--logoColor) !important;
     border-color: var(--logoColor) !important;
-    color: var(--whiteColor) !important;
+    color: #fff !important;
 }
