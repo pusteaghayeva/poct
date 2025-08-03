@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
 $(document).ready(function () {
   $("#useful-links").owlCarousel({
     loop: true,
@@ -160,6 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateVisibility();
   }
 
+<<<<<<< HEAD
   setupToggle('.vacancy-blog', '.vacancy-flex', 'toggleVacancies', 2, 5);
   setupToggle('.faqs .container', '.faq-drawer', 'toggleFaqs', 3, 3);
   setupToggle('.announcement-blog', '.announcement-flex', 'toggleAnnouncements', 3, 5);
@@ -172,3 +179,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // mezenne
 
+=======
+  // Əvvəlki çağırışlar...
+  setupToggle('.vacancy-blog', '.vacancy-flex', 'toggleVacancies', 2, 5);
+  setupToggle('.faqs .container', '.faq-drawer', 'toggleFaqs', 3, 3);
+
+  // Maliyyə hesabatları üçün yeni çağırış
+  setupToggle('.financial_statements .row', '.postal_convention_left', 'toggleFinancialStatements', 4, 3);
+});
+
+// mezenne
+
+(function() {
+  let supportsPassive = false;
+  try {
+    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+      get: function () {
+        supportsPassive = true;
+      }
+    }));
+  } catch(e) {}
+
+  const origAddEventListener = EventTarget.prototype.addEventListener;
+  EventTarget.prototype.addEventListener = function(type, listener, options) {
+    if (type === 'touchstart' || type === 'touchmove') {
+      if (options === undefined) options = { passive: true };
+      else if (typeof options === 'boolean') options = { passive: true };
+      else if (typeof options === 'object') options.passive = true;
+    }
+    origAddEventListener.call(this, type, listener, options);
+  };
+})();
+// scrolla bagli consoleda cixan xeta ucun
+>>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece

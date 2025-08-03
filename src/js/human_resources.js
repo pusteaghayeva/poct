@@ -73,7 +73,6 @@ jQuery(document).ready(function ($) {
 });  
 
 
-// more read
   document.querySelectorAll(".caption-more").forEach(function (btn) {
         btn.addEventListener("click", function () {
             const text = btn.previousElementSibling; 

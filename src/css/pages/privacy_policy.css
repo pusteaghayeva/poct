@@ -2,7 +2,12 @@
     line-height: normal;
 }
 
+<<<<<<< HEAD
 .privacy_policy_title {
+=======
+.static-title {
+    font-family: var(--fontSarabun);
+>>>>>>> 69815476df7e0a253458288d1b4a8f4abbfe7ece
     font-weight: 700;
     font-size: 64px;
     color: var(--aboutColor);

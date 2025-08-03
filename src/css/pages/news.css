@@ -48,12 +48,10 @@
 
 .press-news-wrapper .press-news-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: #fff;
+    background: var(--whiteColor);
     border-radius: 8px;
 }
 
 .press-news-wrapper .press-news-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-

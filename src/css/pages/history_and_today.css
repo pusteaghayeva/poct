@@ -5,7 +5,6 @@
 .history_and_today_img_blog {
     width: 100%;
     height: 100%;
-    background-color: red;
 }
 
 .history_and_today_img {
@@ -78,17 +77,6 @@
 }
 
 .history-today-content-title {
-    /* width: 90%;
-    text-align: center;
-    margin: 0 auto;
-    font-weight: 600;
-    font-size: 64px;
-    text-align: center;
-    line-height: 70px;
-    padding: 53px 0; */
-}
-
-.history-today-content-title {
     color: var(--aboutColor);
     font-weight: 700;
     font-size: 36px;
@@ -118,7 +106,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* margin-left: 32px; */
 }
 
 .history-today-content-left {
@@ -147,7 +134,6 @@
     max-width: 48%;
 }
 
-/* son */
 .history-today-content-flex {
     display: flex;
     align-items: center;
@@ -156,7 +142,6 @@
     flex-wrap: wrap;
 }
 
-/* Standart düzülüş: solda mətn, sağda şəkil */
 .history-today-content-right {
     order: 1;
 }
@@ -165,7 +150,6 @@
     order: 2;
 }
 
-/* Reverse üçün: solda şəkil, sağda mətn */
 .reverse-order .history-today-content-right {
     order: 2;
 }
@@ -193,11 +177,9 @@
 }
 
 .history-today-content-text {
-    /* font-weight: 700; */
     font-size: 36px;
 }
 
-/* Mobil görünüş üçün sıranı qaytar */
 @media (max-width: 768px) {
     .history-today-content-flex {
         flex-direction: column;
@@ -228,9 +210,6 @@
         width: 100%;
         height: auto;
     }
-
-
-
 }
 
 @media (max-width: 1200px) {
